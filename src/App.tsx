@@ -1,13 +1,10 @@
-import './App.css'
-function App() {
+import { Navbar } from "../components/Navbar";
+import { PageContainer } from "../components/PageContainer";
 
+export function App() {
   return (
-    <>
-      <div>
-        <h1> TEST </h1>
-      </div>
-    </>
-  )
+    <PageContainer>
+      <Navbar />
+    </PageContainer>
+  );
 }
-
-export default App
