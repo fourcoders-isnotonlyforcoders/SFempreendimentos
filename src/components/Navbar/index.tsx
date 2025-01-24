@@ -1,12 +1,23 @@
 import React from "react";
-import { LogoBox, NavbarContainer, NavLink, NavBtn } from "./style";
+import {
+  NavbarContact,
+  NavbarContainer,
+  NavbarMenu,
+  NavbarMenuItem
+} from "./style";
+import { NavbarLogo } from "../NavbarLogo";
 
 export const Navbar: React.FC = () => {
   return (
     <NavbarContainer>
-      <LogoBox>Logo</LogoBox>
-      <NavLink>Links</NavLink>
-      <NavBtn>Button</NavBtn>
+      <NavbarLogo />
+      <NavbarMenu>
+        <NavbarMenuItem href="#">link</NavbarMenuItem>
+        <NavbarMenuItem href="#">link</NavbarMenuItem>
+        <NavbarMenuItem href="#">link</NavbarMenuItem>
+        <NavbarMenuItem href="#">link</NavbarMenuItem>
+      </NavbarMenu>
+      <NavbarContact href="#">Fale Conosco</NavbarContact>
     </NavbarContainer>
   );
 };
