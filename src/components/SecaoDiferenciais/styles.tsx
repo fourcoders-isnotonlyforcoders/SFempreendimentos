@@ -8,7 +8,7 @@ export const SecaoDiferenciaisContainer = styled.div`
   width: 100%;
   max-width: 1350px;
   margin: 0 auto;
-  padding: 11rem 4rem;
+  padding: 10rem 4rem;
 `;
 
 export const SecaoDiferenciaisCardsContainer = styled.div`
@@ -31,6 +31,12 @@ export const SecaoDiferenciaisCard = styled.div`
   padding: 2rem;
   border-radius: 12px;
   border: 2.5px solid ${({ theme }) => theme.colors.primary};
+  transition: scale 0.4s;
+  cursor: default;
+
+  &:hover {
+    scale: 1.05;
+  }
 `;
 
 export const SecaoDiferenciaisCardIcon = styled.img`

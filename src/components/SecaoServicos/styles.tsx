@@ -77,9 +77,14 @@ export const SecaoServicosItemLink = styled.a`
   cursor: pointer;
   padding-right: 2rem;
   color: ${({ theme }) => theme.colors.primary};
+  transition: filter 0.4s;
 
   &::after {
     content: url("./arrow-right.svg");
     width: 4rem;
+  }
+
+  &:hover {
+    filter: brightness(1.5);
   }
 `;

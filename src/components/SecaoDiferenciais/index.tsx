@@ -10,7 +10,7 @@ import {
 
 export const SecaoDiferenciais = () => {
   return (
-    <SecaoDiferenciaisContainer>
+    <SecaoDiferenciaisContainer id="diferenciais">
       <TituloSecao
         titulo="Por que nos contratar ?"
         preTitulo="DIFERENCIAIS"

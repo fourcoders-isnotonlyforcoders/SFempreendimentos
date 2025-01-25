@@ -9,10 +9,11 @@ export const TituloSecao: React.FC<TituloSecaoProps> = ({
   titulo,
   preTitulo,
   align,
-  color
+  color,
+  id
 }) => {
   return (
-    <TituloSecaoContainer align={align} color={color}>
+    <TituloSecaoContainer align={align} color={color} id={id}>
       <PreTituloSecao>{preTitulo.toUpperCase()}</PreTituloSecao>
       <TituloSecaoComponent>{titulo}</TituloSecaoComponent>
     </TituloSecaoContainer>

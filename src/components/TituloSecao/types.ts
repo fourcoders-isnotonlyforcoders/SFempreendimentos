@@ -3,4 +3,5 @@ export type TituloSecaoProps = {
   preTitulo: string;
   align: "center" | "left";
   color: "white" | "secondary";
+  id?: string;
 };

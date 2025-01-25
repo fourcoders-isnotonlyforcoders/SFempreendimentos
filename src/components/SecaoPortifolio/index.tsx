@@ -15,6 +15,7 @@ export const SecaoPortifolio = () => {
         preTitulo="DESTAQUES"
         align="center"
         color="white"
+        id="portifolio"
       />
       <SecaoPortifolioCardsContainer>
         {[...Array(6)].map((_, index) => (

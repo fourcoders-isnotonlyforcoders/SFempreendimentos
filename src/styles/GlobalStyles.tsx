@@ -10,6 +10,8 @@ body {
     background: ${(props) => props.theme.colors.secondary};
     font-family: 'Inter', sans-serif;
     font-size: 10px;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
 };
 
 

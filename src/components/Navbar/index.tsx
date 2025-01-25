@@ -18,10 +18,10 @@ export const Navbar: React.FC = () => {
         <NavbarContainer>
           <NavbarLogo />
           <NavbarMenu>
-            <NavbarMenuItem href="#">link</NavbarMenuItem>
-            <NavbarMenuItem href="#">link</NavbarMenuItem>
-            <NavbarMenuItem href="#">link</NavbarMenuItem>
-            <NavbarMenuItem href="#">link</NavbarMenuItem>
+            <NavbarMenuItem href="#servicos">Serviços</NavbarMenuItem>
+            <NavbarMenuItem href="#diferenciais">Diferenciais</NavbarMenuItem>
+            <NavbarMenuItem href="#portifolio">Portifólio</NavbarMenuItem>
+            <NavbarMenuItem href="#contato">Contato</NavbarMenuItem>
           </NavbarMenu>
           {width > 768 && <Button content="Fale Conosco" onClick={() => {}} />}
         </NavbarContainer>

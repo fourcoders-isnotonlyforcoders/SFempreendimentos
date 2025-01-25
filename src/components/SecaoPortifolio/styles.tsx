@@ -4,11 +4,11 @@ export const SecaoPortifolioContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4.4rem;
+  gap: 3rem;
   width: 100%;
   max-width: 1350px;
   margin: 0 auto;
-  padding: 11rem 4rem;
+  padding: 8rem 4rem;
 `;
 
 export const SecaoPortifolioCardsContainer = styled.div`
@@ -27,6 +27,13 @@ export const SecaoPortifolioCard = styled.div`
   border-radius: 8px;
   border: 2.5px solid ${({ theme }) => theme.colors.primary};
   overflow: hidden;
+
+  transition: scale 0.4s;
+  cursor: default;
+
+  &:hover {
+    scale: 1.05;
+  }
 `;
 
 export const SecaoPortifolioCardImage = styled.img`
