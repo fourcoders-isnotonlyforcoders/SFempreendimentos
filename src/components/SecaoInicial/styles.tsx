@@ -18,7 +18,7 @@ export const SecaoinicialBackground = styled.div`
       ),
       url("./house-img.avif") no-repeat top center;
     background-size: contain;
-    height: 90vh;
+    height: 80vh;
   }
 `;
 
@@ -40,6 +40,8 @@ export const SecaoInicialContent = styled.div`
 
   @media only screen and (max-width: 768px) {
     width: 100%;
+    padding: 20rem 0;
+    justify-content: flex-start;
   }
 `;
 
