@@ -1,12 +1,23 @@
 import styled from "styled-components";
 
+export const NavbarBackground = styled.div`
+  border: 1.5px solid ${({ theme }) => theme.colors.offWhite};
+`;
+
 export const NavbarContainer = styled.div`
-  padding: 2rem 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
   color: ${({ theme }) => theme.colors.white};
-  border: 1.5px solid ${({ theme }) => theme.colors.offWhite};
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
 `;
 
 export const NavbarMenu = styled.div`
@@ -39,9 +50,4 @@ export const NavbarMenuItem = styled.a`
   &:hover {
     filter: brightness(1);
   }
-`;
-
-export const NavbarContact = styled.a`
-  font-size: 1.875rem;
-  font-weight: bold;
 `;
