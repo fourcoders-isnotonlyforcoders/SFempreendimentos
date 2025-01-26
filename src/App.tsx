@@ -4,6 +4,7 @@ import { SecaoDiferenciais } from "./components/SecaoDiferenciais";
 import { SecaoInicial } from "./components/SecaoInicial";
 import { SecaoPortifolio } from "./components/SecaoPortifolio";
 import { SecaoServicos } from "./components/SecaoServicos";
+import { SecaoSobre } from "./components/SecaoSobre";
 
 export function App() {
   return (
@@ -13,6 +14,7 @@ export function App() {
       <SecaoServicos />
       <SecaoDiferenciais />
       <SecaoPortifolio />
+      <SecaoSobre/>
     </PageContainer>
   );
 }
