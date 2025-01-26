@@ -1,6 +1,16 @@
+/** @format */
+
 import React from "react";
 import { TituloSecao } from "../TituloSecao";
-import { SobreButton, SobreContainer, SobreParagraph, SobreLeft, SobreCenter, SobreRight, SobreImg } from "./styles";
+import {
+  SobreButton,
+  SobreCenter,
+  SobreContainer,
+  SobreImg,
+  SobreLeft,
+  SobreParagraph,
+  SobreRight,
+} from "./styles";
 export const SecaoSobre: React.FC = () => {
   return (
     <SobreContainer>
@@ -28,12 +38,9 @@ export const SecaoSobre: React.FC = () => {
         </SobreParagraph>
         <SobreButton>LEIA MAIS</SobreButton>
       </SobreLeft>
-      <SobreCenter>
-      </SobreCenter>
+      <SobreCenter></SobreCenter>
       <SobreRight>
-        <SobreImg src="../../../public/house-2.avif">
-
-        </SobreImg>
+        <SobreImg src="/house-2.avif"></SobreImg>
       </SobreRight>
     </SobreContainer>
   );
