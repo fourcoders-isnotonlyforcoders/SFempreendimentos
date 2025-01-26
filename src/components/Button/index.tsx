@@ -28,7 +28,7 @@ export const Button: React.FC<ButtonProps> = ({
   };
 
   return (
-    <ButtonComponent onClick={onClick} padding={sizeStyles[size]}>
+    <ButtonComponent onClick={onClick} padding={sizeStyles[size]} data-aos="fade-left" data-aos-duration="500" >
       {content}
     </ButtonComponent>
   );

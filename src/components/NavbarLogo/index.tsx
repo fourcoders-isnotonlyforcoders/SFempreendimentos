@@ -1,6 +1,6 @@
 export const NavbarLogo: React.FC = () => {
   return (
-    <div>
+    <div data-aos="fade-right" data-aos-duration= "500">
       <h1>Logo</h1>
     </div>
   );

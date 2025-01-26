@@ -19,37 +19,37 @@ export const SecaoServicos: React.FC = () => {
         color="white"
       />
       <SecaoServicosItemsContainer>
-        <SecaoServicosItem>
-          <SecaoServicosItemTitle>Construção</SecaoServicosItemTitle>
+        <SecaoServicosItem >
+          <SecaoServicosItemTitle data-aos="fade-right" data-aos-duration="550" >Construção</SecaoServicosItemTitle>
           <SecaoServicosItemContent>
-            <SecaoServicosItemDescription>
+            <SecaoServicosItemDescription data-aos="fade-right" data-aos-duration="500">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim.
             </SecaoServicosItemDescription>
-            <SecaoServicosItemLink>Saiba mais</SecaoServicosItemLink>
+            <SecaoServicosItemLink data-aos="fade-left" data-aos-duration="500">Saiba mais</SecaoServicosItemLink>
           </SecaoServicosItemContent>
         </SecaoServicosItem>
         <SecaoServicosItem>
-          <SecaoServicosItemTitle>Construção</SecaoServicosItemTitle>
+          <SecaoServicosItemTitle data-aos="fade-right" data-aos-duration="650">Construção</SecaoServicosItemTitle>
           <SecaoServicosItemContent>
-            <SecaoServicosItemDescription>
+            <SecaoServicosItemDescription data-aos="fade-right" data-aos-duration="600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim.
             </SecaoServicosItemDescription>
-            <SecaoServicosItemLink>Saiba mais</SecaoServicosItemLink>
+            <SecaoServicosItemLink data-aos="fade-left" data-aos-duration="600">Saiba mais</SecaoServicosItemLink>
           </SecaoServicosItemContent>
         </SecaoServicosItem>
         <SecaoServicosItem>
-          <SecaoServicosItemTitle>Construção</SecaoServicosItemTitle>
+          <SecaoServicosItemTitle data-aos="fade-right" data-aos-duration="750">Construção</SecaoServicosItemTitle>
           <SecaoServicosItemContent>
-            <SecaoServicosItemDescription>
+            <SecaoServicosItemDescription data-aos="fade-right" data-aos-duration="700">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim.
             </SecaoServicosItemDescription>
-            <SecaoServicosItemLink>Saiba mais</SecaoServicosItemLink>
+            <SecaoServicosItemLink data-aos="fade-left" data-aos-duration="700">Saiba mais</SecaoServicosItemLink>
           </SecaoServicosItemContent>
         </SecaoServicosItem>
       </SecaoServicosItemsContainer>
