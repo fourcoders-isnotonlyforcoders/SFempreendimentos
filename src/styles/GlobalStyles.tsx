@@ -12,6 +12,7 @@ body {
     font-size: 10px;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 };
 
 

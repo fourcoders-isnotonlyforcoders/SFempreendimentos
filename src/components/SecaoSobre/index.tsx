@@ -19,7 +19,7 @@ export const SecaoSobre: React.FC = () => {
           align="left"
           color="white"
         />
-        <SobreParagraph>
+        <SobreParagraph data-aos= "fade-right" data-aos-duration="500" >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
@@ -34,11 +34,11 @@ export const SecaoSobre: React.FC = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim.
         </SobreParagraph>
-        <SobreButton>LEIA MAIS</SobreButton>
+        <SobreButton data-aos="fade-up-right" data-aos-duration="500">LEIA MAIS</SobreButton>
       </SobreLeft>
-      <SobreCenter></SobreCenter>
+      <SobreCenter data-aos="zoom-in" data-aos-duration="500"></SobreCenter>
       <SobreRight>
-        <SobreImg src="/house-2.avif"></SobreImg>
+        <SobreImg src="/house-2.avif" data-aos="fade-up-left" data-aos-duration="500"></SobreImg>
       </SobreRight>
     </SobreContainer>
   );

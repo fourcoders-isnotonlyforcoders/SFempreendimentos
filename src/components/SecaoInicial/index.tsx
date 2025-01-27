@@ -10,15 +10,15 @@ import {
 
 export const SecaoInicial: React.FC = () => {
   return (
-    <SecaoinicialBackground>
+    <SecaoinicialBackground data-aos="zoom-out" data-aos-duration="300">
       <SecaoInicialContainer>
         <SecaoInicialContent>
-          <SecaoInicialTitle>
+          <SecaoInicialTitle data-aos="fade-up-right" data-aos-duration="600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore
             <SecaoInicialTitleStrong> magna aliqua.</SecaoInicialTitleStrong>
           </SecaoInicialTitle>
-          <SecaoInicialDescription>
+          <SecaoInicialDescription data-aos="fade-right" data-aos-duration="600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim.

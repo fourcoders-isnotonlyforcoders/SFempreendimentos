@@ -1,20 +1,18 @@
 import styled from "styled-components";
 
-// Container principal
 export const SobreContainer = styled.div`
   max-width: 1350px;
   height: auto;
-  min-height: 400px;
+  min-height: 420px;
   display: flex;
   justify-content: space-around;
   gap: 10px;
   align-items: center;
-  padding: 0 7.7rem;
-
+  padding: 1rem 7.7rem;
   @media (max-width: 1024px) {
-    padding: 0 3rem; /* Menos padding em telas menores */
-    flex-direction: column; /* Organiza em coluna */
-    align-items: flex-start; /* Alinha ao início */
+    padding: 0 3rem; 
+    flex-direction: column; 
+    align-items: flex-start; 
   }
 
   @media (max-width: 768px) {
@@ -34,7 +32,7 @@ export const SobreLeft = styled.div`
   width: auto;
   max-width: 50%;
   height: auto;
-  min-height: 470px;
+  min-height: 500px;
 
   @media (max-width: 1024px) {
     max-width: 100%;
@@ -73,18 +71,17 @@ export const SobreParagraph = styled.p`
 export const SobreButton = styled.button`
   border: 1px solid grey;
   border-radius: 25px;
-  width: 60%;
-  height: 60px;
+  height: 65px;
+  width: 65%;
   text-align: center;
   color: ${(props) => props.theme.colors.third};
   font-size: 2.2rem;
   font-weight: bold;
   cursor: pointer;
-  margin: 10px auto;
+  margin: 15px auto;
   transition: all 0.4s ease;
 
   &:hover {
-    transform: scale(1.05);
     background-color: ${(props) => props.theme.colors.primary};
     opacity: 0.8;
     border: none;
@@ -144,14 +141,14 @@ export const SobreCenter = styled.div`
 export const SobreRight = styled.div`
   width: auto;
   max-width: 50%;
-  height: 100%;
+  height: auto;
 
   @media (max-width: 1024px) {
-    max-width: 100%; /* Ocupa 100% da largura em telas menores */
+    max-width: 100%; 
   }
 
   @media (max-width: 480px) {
-    margin-top: 20px; /* Adiciona um espaçamento quando em celular */
+    margin-top: 20px;
   }
 `;
 
@@ -175,7 +172,7 @@ export const SobreImg = styled.img`
   }
 
   @media (max-width: 480px) {
-    max-height: 300px; /* Imagem menor em celulares */
+    max-height: 300px; 
     width: 100%;
   }
 `;
