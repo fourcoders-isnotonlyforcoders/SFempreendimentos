@@ -1,22 +1,18 @@
 import styled from "styled-components";
 
-// Container principal
 export const SobreContainer = styled.div`
   max-width: 1350px;
   height: auto;
-  min-height: 400px;
+  min-height: 420px;
   display: flex;
   justify-content: space-around;
   gap: 10px;
   align-items: center;
   padding: 1rem 7.7rem;
-  margin-bottom: 20px;
-  border: 1px solid;
-
   @media (max-width: 1024px) {
-    padding: 0 3rem; /* Menos padding em telas menores */
-    flex-direction: column; /* Organiza em coluna */
-    align-items: flex-start; /* Alinha ao início */
+    padding: 0 3rem; 
+    flex-direction: column; 
+    align-items: flex-start; 
   }
 
   @media (max-width: 768px) {
@@ -36,7 +32,7 @@ export const SobreLeft = styled.div`
   width: auto;
   max-width: 50%;
   height: auto;
-  min-height: 470px;
+  min-height: 500px;
 
   @media (max-width: 1024px) {
     max-width: 100%;
@@ -145,14 +141,14 @@ export const SobreCenter = styled.div`
 export const SobreRight = styled.div`
   width: auto;
   max-width: 50%;
-  height: 100%;
+  height: auto;
 
   @media (max-width: 1024px) {
-    max-width: 100%; /* Ocupa 100% da largura em telas menores */
+    max-width: 100%; 
   }
 
   @media (max-width: 480px) {
-    margin-top: 20px; /* Adiciona um espaçamento quando em celular */
+    margin-top: 20px;
   }
 `;
 
@@ -176,7 +172,7 @@ export const SobreImg = styled.img`
   }
 
   @media (max-width: 480px) {
-    max-height: 300px; /* Imagem menor em celulares */
+    max-height: 300px; 
     width: 100%;
   }
 `;
