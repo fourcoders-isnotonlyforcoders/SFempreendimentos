@@ -21,7 +21,7 @@ export const FormContainer = styled.form`
 
 export const FormNameContainer = styled.div`
   position: relative;
-  width: auto; 
+  width: auto;
   min-width: 300px;
   margin: 4rem 0 0 0;
   flex: 1 1 100%;
@@ -44,7 +44,7 @@ export const NameInput = styled.input`
   border-bottom: 2px solid ${(props) => props.theme.colors.fourth};
   background: transparent;
   color: ${(props) => props.theme.colors.primary};
-  
+
   &::placeholder {
     color: transparent;
   }
@@ -55,6 +55,7 @@ export const NameInput = styled.input`
   }
 
   &:focus ~ label,
+  &:not(&:placeholder-shown) ~ label,
   &:valid ~ label {
     top: -22px;
     font-size: 1.6rem;
@@ -82,10 +83,10 @@ export const Bar = styled.span`
   position: relative;
   display: block;
   width: 100%;
-  
+
   &::before,
   &::after {
-    content: '';
+    content: "";
     height: 2px;
     width: 0;
     position: absolute;
@@ -102,9 +103,8 @@ export const Bar = styled.span`
   }
 `;
 
-
 export const FormTextContainer = styled.div`
-margin-top: 22px;
+  margin-top: 22px;
   width: auto;
   min-width: 100%;
   textarea {
@@ -113,14 +113,14 @@ margin-top: 22px;
     font-size: 1.8rem;
     border: 2px solid ${(props) => props.theme.colors.fourth};
     border-radius: 4px;
-    resize: none; 
+    resize: none;
     outline: none;
     background-color: transparent;
     color: ${(props) => props.theme.colors.primary};
   }
-  
+
   textarea:focus {
-    border: 2px solid ${(props) => props.theme.colors.primary}; 
+    border: 2px solid ${(props) => props.theme.colors.primary};
   }
 `;
 
@@ -135,7 +135,7 @@ export const FormButton = styled.button`
   cursor: pointer;
   transition: 0.3s ease;
 
-  &:hover{
+  &:hover {
     border: 2px solid ${(props) => props.theme.colors.primary};
     color: ${(props) => props.theme.colors.primary};
 
