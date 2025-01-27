@@ -133,12 +133,11 @@ export const FormButton = styled.button`
   width: 100%;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
     border: 2px solid ${(props) => props.theme.colors.primary};
     color: ${(props) => props.theme.colors.primary};
 
-    transform: scale(1.02);
   }
 `;
