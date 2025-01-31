@@ -64,7 +64,7 @@ export const Carrousel: React.FC = () => {
                 <CarrouselCardAuthorImage src="./test.jpg" />
                 <CarrouselCardAuthorInfo>
                   <CarrouselCardAuthorInfoText>
-                    Ruan Dias.
+                    Victor Hugo.
                   </CarrouselCardAuthorInfoText>
                   <CarrouselCardAuthorInfoText>
                     São Paulo - SP
