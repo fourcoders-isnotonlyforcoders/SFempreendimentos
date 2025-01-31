@@ -1,14 +1,19 @@
 import styled from "styled-components";
 
+export const SecaoDepoimentosBackground = styled.div`
+  background-color: ${({ theme }) => theme.colors.fifth};
+  border-radius: 350px 0px 0px 0px;
+`;
+
 export const SecaoDepoimentosContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
   padding: 2rem 2rem 14rem;
   gap: 11rem;
-  background-color: ${({ theme }) => theme.colors.fifth};
-  border-radius: 350px 0px 0px 0px;
 `;
 
 export const SecaoDepoimentosContent = styled.div`

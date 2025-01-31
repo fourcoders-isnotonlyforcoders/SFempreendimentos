@@ -16,15 +16,14 @@ export const PreTituloSecao = styled.p`
   letter-spacing: 0.3rem;
 `;
 
-export const TituloSecao = styled.h2`
+export const TituloSecao = styled.div`
   font-size: 3.6rem;
   font-weight: 700;
   @media (max-width: 1024px) {
-    font-size: 2.8rem; 
-    
+    font-size: 2.8rem;
   }
 
   @media (max-width: 480px) {
-    font-size: 2.8rem; 
+    font-size: 2.8rem;
   }
 `;

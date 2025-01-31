@@ -14,8 +14,12 @@ export const TituloSecao: React.FC<TituloSecaoProps> = ({
 }) => {
   return (
     <TituloSecaoContainer align={align} color={color} id={id}>
-      <PreTituloSecao data-aos="fade-up-right" data-aos-duration="400">{preTitulo.toUpperCase()}</PreTituloSecao>
-      <TituloSecaoComponent data-aos="zoom-out-up" data-aos-duration="500">{titulo}</TituloSecaoComponent>
+      <PreTituloSecao data-aos="fade-up-right" data-aos-duration="400">
+        {preTitulo.toUpperCase()}
+      </PreTituloSecao>
+      <TituloSecaoComponent data-aos="zoom-out-up" data-aos-duration="500">
+        {titulo}
+      </TituloSecaoComponent>
     </TituloSecaoContainer>
   );
 };

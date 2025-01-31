@@ -1,5 +1,5 @@
 export type TituloSecaoProps = {
-  titulo: string;
+  titulo: string | React.ReactNode;
   preTitulo: string;
   align: "center" | "left";
   color: "white" | "secondary";
