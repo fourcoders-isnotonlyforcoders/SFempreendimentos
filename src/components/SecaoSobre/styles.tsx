@@ -48,7 +48,7 @@ export const SobreLeft = styled.div`
 
 export const SobreParagraph = styled.p`
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 500;
   line-height: 22px;
   padding: 1rem 2rem 1rem 0;
   color: ${(props) => props.theme.colors.offWhite};
@@ -142,11 +142,12 @@ export const SobreCenter = styled.div`
 
 export const SobreRight = styled.div`
   width: auto;
-  max-width: 50%;
   height: auto;
+  max-width: 50%;
 
   @media (max-width: 1024px) {
     max-width: 100%;
+    margin: 0 auto;
   }
 
   @media (max-width: 480px) {
@@ -172,7 +173,8 @@ export const SobreImg = styled.img`
   }
 
   @media (max-width: 1024px) {
-    max-height: 400px; /* Imagem menor em tablets */
+    margin-top: 2rem;
+    max-height: 400px;
   }
 
   @media (max-width: 480px) {

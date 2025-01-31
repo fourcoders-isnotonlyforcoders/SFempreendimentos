@@ -5,7 +5,7 @@ import {
   NavbarMenu,
   NavbarMenuItem
 } from "./style";
-import { NavbarLogo } from "../NavbarLogo";
+import { Logo } from "../Logo";
 import { Button } from "../Button";
 import { useWindowDimensions } from "../../../utils/useWindowDimensions";
 
@@ -16,7 +16,7 @@ export const Navbar: React.FC = () => {
     <>
       <NavbarBackground>
         <NavbarContainer>
-          <NavbarLogo data-aos="fade-right" />
+          <Logo data-aos="fade-right" />
           <NavbarMenu>
             <NavbarMenuItem
               href="#servicos"

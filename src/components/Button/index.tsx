@@ -22,7 +22,7 @@ export const Button: React.FC<ButtonProps> = ({
     },
     large: {
       padding: "2rem 10rem",
-      paddingMobile: "1.5rem 5rem",
+      paddingMobile: "1.5rem 4rem",
       fontSize: "3rem",
       fontSizeMobile: "2.5rem"
     }

@@ -60,6 +60,10 @@ export const SecaoServicosItemContent = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
+
+  @media only screen and (max-width: 1180px) {
+    flex-direction: column;
+  }
 `;
 
 export const SecaoServicosItemDescription = styled.p`
@@ -67,6 +71,10 @@ export const SecaoServicosItemDescription = styled.p`
   font-weight: 400;
   max-width: 50%;
   color: ${({ theme }) => theme.colors.white};
+
+  @media only screen and (max-width: 1180px) {
+    max-width: 100%;
+  }
 `;
 
 export const SecaoServicosItemLink = styled.a`

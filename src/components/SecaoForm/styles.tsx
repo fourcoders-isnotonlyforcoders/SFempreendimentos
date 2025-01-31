@@ -33,6 +33,11 @@ export const FormInfosContainer = styled.div`
   gap: 20px;
   width: 100%;
   margin-top: 20px;
+
+  @media only screen and (max-width: 1180px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const NameInput = styled.input`

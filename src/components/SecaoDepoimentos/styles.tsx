@@ -3,6 +3,16 @@ import styled from "styled-components";
 export const SecaoDepoimentosBackground = styled.div`
   background-color: ${({ theme }) => theme.colors.fifth};
   border-radius: 350px 0px 0px 0px;
+
+  @media only screen and (max-width: 1180px) {
+    border-radius: 300px 0px 0px 0px;
+    padding: 4rem 0 0;
+  }
+
+  @media only screen and (max-width: 768px) {
+    border-radius: 200px 0px 0px 0px;
+    padding: 6rem 0 0;
+  }
 `;
 
 export const SecaoDepoimentosContainer = styled.div`
@@ -14,11 +24,19 @@ export const SecaoDepoimentosContainer = styled.div`
   margin: 0 auto;
   padding: 2rem 2rem 14rem;
   gap: 11rem;
+
+  @media only screen and (max-width: 768px) {
+    padding: 2rem 2rem 10rem;
+  }
 `;
 
 export const SecaoDepoimentosContent = styled.div`
   width: 100%;
   padding: 0 9rem;
+
+  @media only screen and (max-width: 1180px) {
+    padding: 0;
+  }
 `;
 
 export const CarrouselContainer = styled.div`

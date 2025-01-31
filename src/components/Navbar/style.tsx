@@ -51,4 +51,8 @@ export const NavbarMenuItem = styled.a<{ transition: string }>`
   &:hover {
     filter: brightness(1);
   }
+
+  @media (max-width: 1180px) {
+    font-size: 1.5rem;
+  }
 `;

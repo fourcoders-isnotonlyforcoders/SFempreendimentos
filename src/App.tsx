@@ -11,6 +11,7 @@ import { SecaoSobre } from "./components/SecaoSobre";
 import { SecaoForm } from "./components/SecaoForm";
 import { SecaoDepoimentos } from "./components/SecaoDepoimentos";
 import { SecaoContato } from "./components/SecaoContato";
+import { Footer } from "./components/Footer";
 
 export function App() {
   // Inicializando o AOS quando o componente for montado
@@ -31,6 +32,7 @@ export function App() {
       <SecaoForm />
       <SecaoDepoimentos />
       <SecaoContato />
+      <Footer />
     </PageContainer>
   );
 }

@@ -15,11 +15,13 @@ import {
   CarrouselCardStars,
   CarrouselContainer
 } from "./styles";
+import { useWindowDimensions } from "../../../utils/useWindowDimensions";
 
 export const Carrousel: React.FC = () => {
+  const { width } = useWindowDimensions();
   const [sliderRef, instanceRef] = useKeenSlider({
     slides: {
-      perView: 3,
+      perView: width > 1180 ? 3 : 1,
       spacing: 30
     },
     loop: true

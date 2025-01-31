@@ -34,6 +34,10 @@ export const SecaoPortifolioCard = styled.div`
   &:hover {
     scale: 1.05;
   }
+
+  @media only screen and (max-width: 1180px) {
+    max-width: 30rem;
+  }
 `;
 
 export const SecaoPortifolioCardImage = styled.img`

@@ -19,6 +19,10 @@ export const SecaoContatoContainer = styled.div`
   margin: 0 auto;
   gap: 3rem;
   padding: 9rem 12rem;
+
+  @media only screen and (max-width: 1180px) {
+    padding: 5rem 2rem 14rem;
+  }
 `;
 
 export const SecaoContatoContent = styled.div`
@@ -28,6 +32,10 @@ export const SecaoContatoContent = styled.div`
   justify-content: center;
   padding: 0 10.25rem;
   margin-bottom: 5rem;
+
+  @media only screen and (max-width: 1180px) {
+    padding: 0;
+  }
 `;
 
 export const SecaoContatoText = styled.p`

@@ -10,15 +10,15 @@ export const SecaoinicialBackground = styled.div`
   background-size: contain;
   height: 95vh;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1180px) {
     background: linear-gradient(
         to top,
-        ${({ theme }) => theme.colors.secondary} 75%,
-        transparent 80%
+        ${({ theme }) => theme.colors.secondary} 60%,
+        transparent 100%
       ),
       url("./house-img.avif") no-repeat top center;
     background-size: contain;
-    height: 80vh;
+    height: 85vh;
   }
 `;
 
@@ -28,6 +28,10 @@ export const SecaoInicialContainer = styled.div`
   margin: 0 auto;
   padding: 5.875rem 1.5rem;
   height: 100%;
+
+  @media only screen and (max-width: 1180px) {
+    padding-bottom: 0;
+  }
 `;
 
 export const SecaoInicialContent = styled.div`
@@ -38,10 +42,10 @@ export const SecaoInicialContent = styled.div`
   width: 50%;
   height: 100%;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1180px) {
     width: 100%;
-    padding: 20rem 0;
-    justify-content: flex-start;
+    align-items: center;
+    gap: 6rem;
   }
 `;
 
@@ -51,7 +55,7 @@ export const SecaoInicialTitle = styled.h1`
   line-height: 1.2;
   color: ${({ theme }) => theme.colors.white};
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1180px) {
     font-size: 2rem;
   }
 `;
@@ -62,7 +66,7 @@ export const SecaoInicialTitleStrong = styled.strong`
   line-height: 1.5;
   color: ${({ theme }) => theme.colors.primary};
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1180px) {
     font-size: 2rem;
   }
 `;
@@ -72,7 +76,7 @@ export const SecaoInicialDescription = styled.p`
   font-weight: 500;
   color: ${({ theme }) => theme.colors.white};
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1180px) {
     font-size: 1.5rem;
   }
 `;
