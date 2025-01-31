@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SecaoFormContainer = styled.section`
-  height: auto;
+  height: 100%;
   padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
@@ -138,6 +138,5 @@ export const FormButton = styled.button`
   &:hover {
     border: 2px solid ${(props) => props.theme.colors.primary};
     color: ${(props) => props.theme.colors.primary};
-
   }
 `;
