@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const SobreContainer = styled.div`
+  width: 100%;
   max-width: 1350px;
   height: auto;
   min-height: 420px;
@@ -9,10 +10,11 @@ export const SobreContainer = styled.div`
   gap: 10px;
   align-items: center;
   padding: 1rem 7.7rem;
+  margin: 0 auto;
   @media (max-width: 1024px) {
-    padding: 0 3rem; 
-    flex-direction: column; 
-    align-items: flex-start; 
+    padding: 0 3rem;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   @media (max-width: 768px) {
@@ -26,9 +28,10 @@ export const SobreContainer = styled.div`
 
 export const SobreLeft = styled.div`
   display: flex;
-  justify-content: space-between;
-  gap: 11px;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 11px;
   width: auto;
   max-width: 50%;
   height: auto;
@@ -39,7 +42,7 @@ export const SobreLeft = styled.div`
   }
 
   @media (max-width: 480px) {
-    min-height: 400px; 
+    min-height: 400px;
   }
 `;
 
@@ -59,12 +62,12 @@ export const SobreParagraph = styled.p`
   }
 
   @media (max-width: 1024px) {
-    font-size: 16px; 
+    font-size: 16px;
     padding: 1rem;
   }
 
   @media (max-width: 480px) {
-    font-size: 14px; 
+    font-size: 14px;
   }
 `;
 
@@ -132,7 +135,6 @@ export const SobreCenter = styled.div`
     display: none;
   }
 
-
   @media (max-width: 480px) {
     display: none;
   }
@@ -144,7 +146,7 @@ export const SobreRight = styled.div`
   height: auto;
 
   @media (max-width: 1024px) {
-    max-width: 100%; 
+    max-width: 100%;
   }
 
   @media (max-width: 480px) {
@@ -158,7 +160,9 @@ export const SobreImg = styled.img`
   width: auto;
   cursor: zoom-in;
   border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: box-shadow 0.3s ease, filter 0.3s ease, opacity 0.5s,
+    transform 0.5s !important;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 
   &:hover {
@@ -172,7 +176,7 @@ export const SobreImg = styled.img`
   }
 
   @media (max-width: 480px) {
-    max-height: 300px; 
+    max-height: 300px;
     width: 100%;
   }
 `;

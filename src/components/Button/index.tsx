@@ -1,10 +1,11 @@
 import { ButtonComponent } from "./styles";
-import { ButtonProps, sizeStyleType } from "./types";
+import { ButtonProps, sizeStyleType, styleType } from "./types";
 
 export const Button: React.FC<ButtonProps> = ({
   content,
   onClick,
-  size = "medium"
+  size = "medium",
+  customStyle = "default"
 }) => {
   const sizeStyles: Record<string, sizeStyleType> = {
     small: {
@@ -26,9 +27,27 @@ export const Button: React.FC<ButtonProps> = ({
       fontSizeMobile: "2.5rem"
     }
   };
+  const styleStyles: Record<string, styleType> = {
+    default: {
+      backgroundColor: "third",
+      color: "black",
+      border: "none"
+    },
+    outline: {
+      backgroundColor: "transparent",
+      color: "third",
+      border: "1px solid"
+    }
+  };
 
   return (
-    <ButtonComponent onClick={onClick} padding={sizeStyles[size]} data-aos="fade-left" data-aos-duration="500" >
+    <ButtonComponent
+      onClick={onClick}
+      padding={sizeStyles[size]}
+      customStyle={styleStyles[customStyle]}
+      data-aos="fade-left"
+      data-aos-duration="500"
+    >
       {content}
     </ButtonComponent>
   );

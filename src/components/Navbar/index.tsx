@@ -14,16 +14,40 @@ export const Navbar: React.FC = () => {
 
   return (
     <>
-      <NavbarBackground >
+      <NavbarBackground>
         <NavbarContainer>
-          <NavbarLogo data-aos="fade-right"/>
+          <NavbarLogo data-aos="fade-right" />
           <NavbarMenu>
-            <NavbarMenuItem href="#servicos" data-aos="zoom-out-down" data-aos-duration= "200">Serviços</NavbarMenuItem>
-            <NavbarMenuItem href="#diferenciais" data-aos="zoom-out-down" data-aos-duration= "300">Diferenciais</NavbarMenuItem>
-            <NavbarMenuItem href="#portifolio" data-aos="zoom-out-down" data-aos-duration= "400">Portifólio</NavbarMenuItem>
-            <NavbarMenuItem href="#contato" data-aos="zoom-out-down" data-aos-duration= "500">Contato</NavbarMenuItem>
+            <NavbarMenuItem
+              href="#servicos"
+              data-aos="zoom-out-down"
+              transition="0.2s"
+            >
+              Serviços
+            </NavbarMenuItem>
+            <NavbarMenuItem
+              href="#diferenciais"
+              data-aos="zoom-out-down"
+              transition="0.3s"
+            >
+              Diferenciais
+            </NavbarMenuItem>
+            <NavbarMenuItem
+              href="#portifolio"
+              data-aos="zoom-out-down"
+              transition="0.4s"
+            >
+              Portifólio
+            </NavbarMenuItem>
+            <NavbarMenuItem
+              href="#contato"
+              data-aos="zoom-out-down"
+              transition="0.5s"
+            >
+              Contato
+            </NavbarMenuItem>
           </NavbarMenu>
-          {width > 768 && <Button content="Fale Conosco" onClick={() => {}}  />}
+          {width > 768 && <Button content="Fale Conosco" onClick={() => {}} />}
         </NavbarContainer>
       </NavbarBackground>
     </>

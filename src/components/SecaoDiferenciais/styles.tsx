@@ -31,7 +31,7 @@ export const SecaoDiferenciaisCard = styled.div`
   padding: 2rem;
   border-radius: 12px;
   border: 2.5px solid ${({ theme }) => theme.colors.primary};
-  transition: scale 0.4s;
+  transition: scale 0.4s, opacity 0.5s, transform 0.5s !important;
   cursor: default;
 
   &:hover {

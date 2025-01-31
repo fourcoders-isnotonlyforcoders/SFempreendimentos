@@ -27,11 +27,12 @@ export const NavbarMenu = styled.div`
   gap: 3rem;
 `;
 
-export const NavbarMenuItem = styled.a`
+export const NavbarMenuItem = styled.a<{ transition: string }>`
   font-size: 1.875rem;
   font-weight: bold;
   filter: brightness(0.5);
-  transition: filter 0.4s;
+  transition: filter 0.4s, opacity ${({ transition }) => transition},
+    transform ${({ transition }) => transition} !important;
 
   &::after {
     content: "";

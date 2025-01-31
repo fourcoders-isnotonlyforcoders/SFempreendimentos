@@ -75,7 +75,8 @@ export const NameTitle = styled.label`
   position: absolute;
   left: 5px;
   top: 10px;
-  transition: 0.2s ease all;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease, opacity 0.5s,
+    transform 0.5s !important;
   pointer-events: none;
 `;
 
