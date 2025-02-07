@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SecaoinicialBackground = styled.div`
   background: linear-gradient(
       90deg,
-      ${({ theme }) => theme.colors.secondary} 40%,
+      ${({ theme }) => theme.colors.black100} 40%,
       transparent 80%
     ),
     url("./house-img.avif") no-repeat top right;
@@ -13,7 +13,7 @@ export const SecaoinicialBackground = styled.div`
   @media only screen and (max-width: 1180px) {
     background: linear-gradient(
         to top,
-        ${({ theme }) => theme.colors.secondary} 60%,
+        ${({ theme }) => theme.colors.black100} 60%,
         transparent 100%
       ),
       url("./house-img.avif") no-repeat top center;
@@ -39,8 +39,9 @@ export const SecaoInicialContent = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 1.875rem;
-  width: 50%;
+  width: 55%;
   height: 100%;
+  padding: 0 1rem;
 
   @media only screen and (max-width: 1180px) {
     width: 100%;
@@ -53,6 +54,7 @@ export const SecaoInicialTitle = styled.h1`
   font-size: 3.5rem;
   font-weight: 600;
   line-height: 1.2;
+  margin: 0;
   color: ${({ theme }) => theme.colors.white};
 
   @media only screen and (max-width: 1180px) {
@@ -61,10 +63,10 @@ export const SecaoInicialTitle = styled.h1`
 `;
 
 export const SecaoInicialTitleStrong = styled.strong`
-  font-size: 3rem;
-  font-weight: 600;
-  line-height: 1.5;
-  color: ${({ theme }) => theme.colors.primary};
+  font-size: 3.3rem;
+  font-weight: bold;
+  line-height: 1.4;
+  color: ${({ theme }) => theme.colors.primaryblue};
 
   @media only screen and (max-width: 1180px) {
     font-size: 2rem;
@@ -72,10 +74,11 @@ export const SecaoInicialTitleStrong = styled.strong`
 `;
 
 export const SecaoInicialDescription = styled.p`
-  font-size: 2rem;
+  font-size: 1.8rem;
+  margin: 0;
   font-weight: 500;
-  color: ${({ theme }) => theme.colors.white};
-
+  color: ${({ theme }) => theme.colors.secundary};
+  
   @media only screen and (max-width: 1180px) {
     font-size: 1.5rem;
   }

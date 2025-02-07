@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SecaoDepoimentosBackground = styled.div`
-  background-color: ${({ theme }) => theme.colors.fifth};
+  background-color: ${({ theme }) => theme.colors.white};
   border-radius: 350px 0px 0px 0px;
 
   @media only screen and (max-width: 1180px) {

@@ -2,23 +2,24 @@ import styled from "styled-components";
 
 export const TituloSecaoContainer = styled.div<{
   align: "center" | "left";
-  color: "white" | "secondary";
 }>`
   display: flex;
   flex-direction: column;
   width: 100%;
   text-align: ${({ align }) => align};
-  color: ${({ color, theme }) => theme.colors[color]};
+
 `;
 
 export const PreTituloSecao = styled.p`
   font-size: 1.8rem;
   letter-spacing: 0.3rem;
+  color: ${(props) => props.theme.colors.primaryblue};
 `;
 
 export const TituloSecao = styled.div`
   font-size: 3.6rem;
   font-weight: 700;
+  color: ${(props) => props.theme.colors.white};
   @media (max-width: 1024px) {
     font-size: 2.8rem;
   }

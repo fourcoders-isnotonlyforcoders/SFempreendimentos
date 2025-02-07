@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NavbarBackground = styled.div`
-  border: 1.5px solid ${({ theme }) => theme.colors.offWhite};
+
 `;
 
 export const NavbarContainer = styled.div`
@@ -12,7 +12,6 @@ export const NavbarContainer = styled.div`
   margin: 0 auto;
   padding: 2rem 4rem;
   color: ${({ theme }) => theme.colors.white};
-
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -28,9 +27,9 @@ export const NavbarMenu = styled.div`
 `;
 
 export const NavbarMenuItem = styled.a<{ transition: string }>`
-  font-size: 1.875rem;
-  font-weight: bold;
-  filter: brightness(0.5);
+  font-size: 1.8rem;
+  font-weight: 700;
+  filter: brightness(0.7);
   transition: filter 0.4s, opacity ${({ transition }) => transition},
     transform ${({ transition }) => transition} !important;
 
@@ -39,7 +38,7 @@ export const NavbarMenuItem = styled.a<{ transition: string }>`
     display: block;
     width: 0;
     height: 2px;
-    background: ${({ theme }) => theme.colors.primary};
+    background: ${({ theme }) => theme.colors.primaryblue};
     transition: width 0.4s;
     border-radius: 4px;
   }
@@ -49,7 +48,7 @@ export const NavbarMenuItem = styled.a<{ transition: string }>`
   }
 
   &:hover {
-    filter: brightness(1);
+    filter: brightness(1.1);
   }
 
   @media (max-width: 1180px) {

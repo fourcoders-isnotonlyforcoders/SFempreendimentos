@@ -7,7 +7,7 @@ export const SecaoServicosContainer = styled.div`
   max-width: 1350px;
   width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem ;
   gap: 3rem;
 `;
 
@@ -49,7 +49,7 @@ export const SecaoServicosItemTitle = styled.h3`
     border-radius: 4px;
     background: linear-gradient(
       90deg,
-      ${({ theme }) => theme.colors.primary} 0%,
+      ${({ theme }) => theme.colors.primaryblue} 0%,
       transparent 100%
     );
   }
@@ -68,9 +68,9 @@ export const SecaoServicosItemContent = styled.div`
 
 export const SecaoServicosItemDescription = styled.p`
   font-size: 2.2rem;
-  font-weight: 400;
+  font-weight: 300;
   max-width: 50%;
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.secundary};
 
   @media only screen and (max-width: 1180px) {
     max-width: 100%;
@@ -84,7 +84,7 @@ export const SecaoServicosItemLink = styled.a`
   font-weight: 600;
   cursor: pointer;
   padding-right: 2rem;
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.secundaryblue};
   transition: filter 0.4s;
 
   &::after {

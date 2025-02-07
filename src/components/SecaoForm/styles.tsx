@@ -46,9 +46,9 @@ export const NameInput = styled.input`
   display: block;
   width: 100%;
   border: none;
-  border-bottom: 2px solid ${(props) => props.theme.colors.fourth};
+  border-bottom: 2px solid ${(props) => props.theme.colors.complementaryblue};
   background: transparent;
-  color: ${(props) => props.theme.colors.primary};
+  color: ${(props) => props.theme.colors.primaryblue};
 
   &::placeholder {
     color: transparent;
@@ -56,7 +56,7 @@ export const NameInput = styled.input`
 
   &:focus {
     outline: none;
-    border-bottom: 2px solid ${(props) => props.theme.colors.primary};
+    border-bottom: 2px solid ${(props) => props.theme.colors.primaryblue};
   }
 
   &:focus ~ label,
@@ -64,7 +64,7 @@ export const NameInput = styled.input`
   &:valid ~ label {
     top: -22px;
     font-size: 1.6rem;
-    color: ${(props) => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.primaryblue};
   }
 
   &:focus ~ .bar:before,
@@ -74,7 +74,7 @@ export const NameInput = styled.input`
 `;
 
 export const NameTitle = styled.label`
-  color: ${(props) => props.theme.colors.fourth};
+  color: ${(props) => props.theme.colors.complementaryblue};
   font-size: 18px;
   font-weight: normal;
   position: absolute;
@@ -96,7 +96,7 @@ export const Bar = styled.span`
     height: 2px;
     width: 0;
     position: absolute;
-    background: ${(props) => props.theme.colors.primary};
+    background: ${(props) => props.theme.colors.complementaryblue};
     transition: 0.2s ease all;
   }
 
@@ -117,16 +117,19 @@ export const FormTextContainer = styled.div`
     width: 100%;
     padding: 1rem;
     font-size: 1.8rem;
-    border: 2px solid ${(props) => props.theme.colors.fourth};
+    border: 2px solid ${(props) => props.theme.colors.complementaryblue};
     border-radius: 4px;
     resize: none;
     outline: none;
     background-color: transparent;
-    color: ${(props) => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.secundaryblue};
   }
 
+  ::placeholder {
+    color: ${(props) => props.theme.colors.complementaryblue};
+  }
   textarea:focus {
-    border: 2px solid ${(props) => props.theme.colors.primary};
+    border: 2px solid ${(props) => props.theme.colors.primaryblue};
   }
 `;
 
@@ -134,15 +137,19 @@ export const FormButton = styled.button`
   border: 2px solid ${(props) => props.theme.colors.fourth};
   padding: 2rem 0;
   text-align: center;
-  font-size: 2.4rem;
-  color: ${(props) => props.theme.colors.fourth};
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: ${(props) => props.theme.colors.primaryblue};
   width: 100%;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+  background: radial-gradient(circle, rgba(0, 123, 231, 0.11), rgba(80, 150, 255, 0.22)) ;
 
   &:hover {
     border: 2px solid ${(props) => props.theme.colors.primary};
     color: ${(props) => props.theme.colors.primary};
+    transform: scale(1.03) !important;
+    background: radial-gradient(circle, rgba(0, 123, 231, 0.22), rgba(80, 150, 255, 0.44)) ;
   }
 `;

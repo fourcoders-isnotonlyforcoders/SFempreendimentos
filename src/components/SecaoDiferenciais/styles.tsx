@@ -9,6 +9,9 @@ export const SecaoDiferenciaisContainer = styled.div`
   max-width: 1350px;
   margin: 0 auto;
   padding: 10rem 4rem;
+  background: linear-gradient(to bottom, #FEFEFA, #FEFEFA, rgba(0, 0, 0, 0) 99%);
+  border-top-right-radius: 222px;
+
 `;
 
 export const SecaoDiferenciaisCardsContainer = styled.div`
@@ -23,14 +26,15 @@ export const SecaoDiferenciaisCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 2rem;
   width: 100%;
   max-width: 300px;
-  min-width: 280px;
-  min-height: 300px;
+  min-width: 300px;
+  min-height: 320px;
   padding: 2rem;
   border-radius: 12px;
-  border: 2.5px solid ${({ theme }) => theme.colors.primary};
+  background-color: #000;
+  border: 2.5px solid ${({ theme }) => theme.colors.black};
   transition: scale 0.4s, opacity 0.5s, transform 0.5s !important;
   cursor: default;
 
@@ -45,7 +49,7 @@ export const SecaoDiferenciaisCardIcon = styled.img`
 `;
 
 export const SecaoDiferenciaisCardTitle = styled.h3`
-  font-size: 3.6rem;
+  font-size: 3rem;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.white};
 
@@ -53,18 +57,18 @@ export const SecaoDiferenciaisCardTitle = styled.h3`
     content: "";
     display: block;
     width: 100%;
-    height: 2px;
+    height: 2.2px;
     border-radius: 4px;
     background: linear-gradient(
       90deg,
-      ${({ theme }) => theme.colors.primary} 0%,
+      ${({ theme }) => theme.colors.primaryblue} 0%,
       transparent 100%
     );
   }
 `;
 
 export const SecaoDiferenciaisCardDescription = styled.p`
-  font-size: 2.4rem;
-  font-weight: 500;
-  color: ${({ theme }) => theme.colors.white};
+  font-size: 2rem;
+  font-weight: 400;
+  color: ${({ theme }) => theme.colors.secundary};
 `;
