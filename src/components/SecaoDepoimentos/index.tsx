@@ -14,7 +14,7 @@ export const SecaoDepoimentos = () => {
           titulo="O que nossos clientes dizem ?"
           preTitulo="DEPOIMENTOS"
           align="center"
-          color="secondary"
+          color="black100"
         />
         <SecaoDepoimentosContent>
           <Carrousel />

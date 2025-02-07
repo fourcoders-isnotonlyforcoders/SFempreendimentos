@@ -22,7 +22,7 @@ export const SecaoContato = () => {
           }
           preTitulo="CONTATO"
           align="center"
-          color="secondary"
+          color="white"
         />
         <SecaoContatoContent>
           <SecaoContatoText>
