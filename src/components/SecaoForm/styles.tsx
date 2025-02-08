@@ -48,7 +48,7 @@ export const NameInput = styled.input`
   border: none;
   border-bottom: 2px solid ${(props) => props.theme.colors.complementaryblue};
   background: transparent;
-  color: ${(props) => props.theme.colors.primaryblue};
+  color: ${(props) => props.theme.colors.secundary};
 
   &::placeholder {
     color: transparent;
@@ -144,12 +144,20 @@ export const FormButton = styled.button`
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background: radial-gradient(circle, rgba(0, 123, 231, 0.11), rgba(80, 150, 255, 0.22)) ;
+  background: radial-gradient(
+    circle,
+    rgba(0, 123, 231, 0.11),
+    rgba(80, 150, 255, 0.22)
+  );
 
   &:hover {
     border: 2px solid ${(props) => props.theme.colors.primary};
     color: ${(props) => props.theme.colors.primary};
     transform: scale(1.03) !important;
-    background: radial-gradient(circle, rgba(0, 123, 231, 0.22), rgba(80, 150, 255, 0.44)) ;
+    background: radial-gradient(
+      circle,
+      rgba(0, 123, 231, 0.22),
+      rgba(80, 150, 255, 0.44)
+    );
   }
 `;

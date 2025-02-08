@@ -9,7 +9,7 @@ export const SobreContainer = styled.div`
   justify-content: space-around;
   gap: 10px;
   align-items: center;
-  padding: 1rem 7.7rem;
+  padding: 1rem 8rem;
   margin: 0 auto;
   @media (max-width: 1024px) {
     padding: 0 3rem;
@@ -51,10 +51,11 @@ export const SobreParagraph = styled.p`
   font-weight: 500;
   line-height: 22px;
   padding: 1rem 2rem 1rem 0;
-  color: ${(props) => props.theme.colors.offWhite};
-  transition: all 0.3s ease;
+  color: ${(props) => props.theme.colors.secundary};
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   filter: brightness(0.9);
+  transition: all 0.3s ease;
+  cursor: default;
 
   &:hover {
     filter: brightness(1.5);
@@ -108,7 +109,7 @@ export const SobreCenter = styled.div`
   background: linear-gradient(
     to top,
     transparent 0%,
-    ${(props) => props.theme.colors.primary} 50%,
+    ${(props) => props.theme.colors.primaryblue} 50%,
     transparent 100%
   );
   animation: pulse 3s ease-in-out infinite;

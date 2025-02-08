@@ -22,7 +22,7 @@ export const SecaoDepoimentosContainer = styled.div`
   width: 100%;
   max-width: 1350px;
   margin: 0 auto;
-  padding: 2rem 2rem 14rem;
+  padding: 2rem 8rem 14rem;
   gap: 11rem;
 
   @media only screen and (max-width: 768px) {

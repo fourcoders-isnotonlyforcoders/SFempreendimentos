@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+export const SecaoDiferenciaisBackground = styled.div`
+  background: linear-gradient(
+    to bottom,
+    #fefefa,
+    #fefefa,
+    rgba(0, 0, 0, 0) 99%
+  );
+  border-top-right-radius: 222px;
+`;
+
 export const SecaoDiferenciaisContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -8,10 +18,7 @@ export const SecaoDiferenciaisContainer = styled.div`
   width: 100%;
   max-width: 1350px;
   margin: 0 auto;
-  padding: 10rem 4rem;
-  background: linear-gradient(to bottom, #FEFEFA, #FEFEFA, rgba(0, 0, 0, 0) 99%);
-  border-top-right-radius: 222px;
-
+  padding: 10rem 8rem;
 `;
 
 export const SecaoDiferenciaisCardsContainer = styled.div`
@@ -28,8 +35,7 @@ export const SecaoDiferenciaisCard = styled.div`
   align-items: flex-start;
   gap: 2rem;
   width: 100%;
-  max-width: 300px;
-  min-width: 300px;
+  width: 23%;
   min-height: 320px;
   padding: 2rem;
   border-radius: 12px;

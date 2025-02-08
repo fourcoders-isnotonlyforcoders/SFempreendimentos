@@ -8,7 +8,7 @@ export const SecaoPortifolioContainer = styled.div`
   width: 100%;
   max-width: 1350px;
   margin: 0 auto;
-  padding: 8rem 4rem;
+  padding: 8rem 8rem;
 `;
 
 export const SecaoPortifolioCardsContainer = styled.div`
@@ -21,7 +21,7 @@ export const SecaoPortifolioCardsContainer = styled.div`
 
 export const SecaoPortifolioCard = styled.div`
   width: 100%;
-  max-width: 37rem;
+  max-width: 31%;
   height: 100%;
   max-height: 22rem;
   border-radius: 8px;
@@ -36,7 +36,7 @@ export const SecaoPortifolioCard = styled.div`
   }
 
   @media only screen and (max-width: 1180px) {
-    max-width: 30rem;
+    max-width: 30%;
   }
 `;
 

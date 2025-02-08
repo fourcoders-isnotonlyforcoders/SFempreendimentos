@@ -17,11 +17,10 @@ export const SecaoContatoContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  gap: 3rem;
-  padding: 9rem 12rem;
+  padding: 9rem 12rem 4rem;
 
   @media only screen and (max-width: 1180px) {
-    padding: 5rem 2rem 14rem;
+    padding: 5rem 2rem 8rem;
   }
 `;
 
@@ -31,7 +30,6 @@ export const SecaoContatoContent = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 10.25rem;
-  margin-bottom: 5rem;
 
   @media only screen and (max-width: 1180px) {
     padding: 0;

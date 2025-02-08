@@ -26,7 +26,7 @@ export const SecaoInicialContainer = styled.div`
   display: flex;
   max-width: 1350px;
   margin: 0 auto;
-  padding: 5.875rem 1.5rem;
+  padding: 5.875rem 8rem;
   height: 100%;
 
   @media only screen and (max-width: 1180px) {
@@ -78,7 +78,7 @@ export const SecaoInicialDescription = styled.p`
   margin: 0;
   font-weight: 500;
   color: ${({ theme }) => theme.colors.secundary};
-  
+
   @media only screen and (max-width: 1180px) {
     font-size: 1.5rem;
   }

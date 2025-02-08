@@ -7,7 +7,7 @@ export const SecaoServicosContainer = styled.div`
   max-width: 1350px;
   width: 100%;
   margin: 0 auto;
-  padding: 4rem ;
+  padding: 4rem 8rem;
   gap: 3rem;
 `;
 
@@ -81,6 +81,7 @@ export const SecaoServicosItemLink = styled.a`
   display: flex;
   align-items: center;
   font-size: 2.2rem;
+  gap: 1rem;
   font-weight: 600;
   cursor: pointer;
   padding-right: 2rem;

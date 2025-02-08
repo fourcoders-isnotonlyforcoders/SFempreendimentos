@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-export const NavbarBackground = styled.div`
-
-`;
+export const NavbarBackground = styled.div``;
 
 export const NavbarContainer = styled.div`
   display: flex;
@@ -10,7 +8,7 @@ export const NavbarContainer = styled.div`
   justify-content: space-between;
   max-width: 1350px;
   margin: 0 auto;
-  padding: 2rem 4rem;
+  padding: 2rem 8rem;
   color: ${({ theme }) => theme.colors.white};
   @media (max-width: 768px) {
     flex-direction: column;
@@ -27,7 +25,7 @@ export const NavbarMenu = styled.div`
 `;
 
 export const NavbarMenuItem = styled.a<{ transition: string }>`
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
   filter: brightness(0.7);
   transition: filter 0.4s, opacity ${({ transition }) => transition},
