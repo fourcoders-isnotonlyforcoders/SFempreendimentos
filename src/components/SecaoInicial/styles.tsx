@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SecaoinicialBackground = styled.div`
   background: linear-gradient(
       90deg,
-      ${({ theme }) => theme.colors.black100} 40%,
+      ${({ theme }) => theme.colors.black} 40%,
       transparent 80%
     ),
     url("./house-img.avif") no-repeat top right;
@@ -13,7 +13,7 @@ export const SecaoinicialBackground = styled.div`
   @media only screen and (max-width: 1180px) {
     background: linear-gradient(
         to top,
-        ${({ theme }) => theme.colors.black100} 60%,
+        ${({ theme }) => theme.colors.black} 60%,
         transparent 100%
       ),
       url("./house-img.avif") no-repeat top center;
@@ -66,7 +66,7 @@ export const SecaoInicialTitleStrong = styled.strong`
   font-size: 3.3rem;
   font-weight: bold;
   line-height: 1.4;
-  color: ${({ theme }) => theme.colors.primaryblue};
+  color: ${({ theme }) => theme.colors.primaryBlue};
 
   @media only screen and (max-width: 1180px) {
     font-size: 2rem;
@@ -77,7 +77,7 @@ export const SecaoInicialDescription = styled.p`
   font-size: 1.8rem;
   margin: 0;
   font-weight: 500;
-  color: ${({ theme }) => theme.colors.secundary};
+  color: ${({ theme }) => theme.colors.secondary};
 
   @media only screen and (max-width: 1180px) {
     font-size: 1.5rem;

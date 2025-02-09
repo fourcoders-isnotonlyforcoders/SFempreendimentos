@@ -2,6 +2,6 @@ export type TituloSecaoProps = {
   titulo: string | React.ReactNode;
   preTitulo: string;
   align: "center" | "left";
-  color: "white" | "black100";
+  color: "white" | "black200";
   id?: string;
 };

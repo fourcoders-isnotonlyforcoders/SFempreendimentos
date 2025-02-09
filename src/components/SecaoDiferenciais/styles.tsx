@@ -39,8 +39,8 @@ export const SecaoDiferenciaisCard = styled.div`
   min-height: 320px;
   padding: 2rem;
   border-radius: 12px;
-  background-color: #000;
-  border: 2.5px solid ${({ theme }) => theme.colors.black};
+  background-color: ${({ theme }) => theme.colors.offBlack};
+  border: 2.5px solid ${({ theme }) => theme.colors.offBlack};
   transition: scale 0.4s, opacity 0.5s, transform 0.5s !important;
   cursor: default;
 
@@ -67,7 +67,7 @@ export const SecaoDiferenciaisCardTitle = styled.h3`
     border-radius: 4px;
     background: linear-gradient(
       90deg,
-      ${({ theme }) => theme.colors.primaryblue} 0%,
+      ${({ theme }) => theme.colors.primaryBlue} 0%,
       transparent 100%
     );
   }
@@ -76,5 +76,5 @@ export const SecaoDiferenciaisCardTitle = styled.h3`
 export const SecaoDiferenciaisCardDescription = styled.p`
   font-size: 2rem;
   font-weight: 400;
-  color: ${({ theme }) => theme.colors.secundary};
+  color: ${({ theme }) => theme.colors.secondary};
 `;

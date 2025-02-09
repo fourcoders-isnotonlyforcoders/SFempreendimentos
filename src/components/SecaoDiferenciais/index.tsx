@@ -9,6 +9,39 @@ import {
   SecaoDiferenciaisContainer
 } from "./styles";
 
+type DiferenciaisCardType = {
+  icon: string;
+  titulo: string;
+  descricao: string;
+};
+
+const DIFERENCIAIS: DiferenciaisCardType[] = [
+  {
+    icon: "./building.svg",
+    titulo: "Excelência",
+    descricao:
+      "Acabamentos impecáveis, materiais nobres e atenção aos mínimos detalhes."
+  },
+  {
+    icon: "./diamond.svg",
+    titulo: "Exclusividade",
+    descricao:
+      "Projetos personalizados para atender perfeitamente às necessidades e desejos do cliente."
+  },
+  {
+    icon: "./clock-1.svg",
+    titulo: "Pontualidade",
+    descricao:
+      "Cumprimento rigoroso dos prazos sem comprometer a qualidade da obra."
+  },
+  {
+    icon: "./leaf.svg",
+    titulo: "Sustentabilidade",
+    descricao:
+      "Uso de tecnologias e materiais que reduzem impactos ambientais e elevam a eficiência."
+  }
+];
+
 export const SecaoDiferenciais = () => {
   return (
     <SecaoDiferenciaisBackground>
@@ -17,20 +50,19 @@ export const SecaoDiferenciais = () => {
           titulo="Por que nos contratar ?"
           preTitulo="DIFERENCIAIS"
           align="center"
-          color="black100"
+          color="black200"
         />
         <SecaoDiferenciaisCardsContainer>
-          {[...Array(4)].map((_, index) => (
+          {DIFERENCIAIS.map(({ icon, titulo, descricao }, index) => (
             <SecaoDiferenciaisCard
               key={index}
               data-aos="zoom-out"
               data-aos-duration="500"
             >
-              <SecaoDiferenciaisCardIcon src="./worker.svg" />
-              <SecaoDiferenciaisCardTitle>Prazos</SecaoDiferenciaisCardTitle>
+              <SecaoDiferenciaisCardIcon src={icon} />
+              <SecaoDiferenciaisCardTitle>{titulo}</SecaoDiferenciaisCardTitle>
               <SecaoDiferenciaisCardDescription>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod
+                {descricao}
               </SecaoDiferenciaisCardDescription>
             </SecaoDiferenciaisCard>
           ))}

@@ -82,7 +82,7 @@ export const CarrouselCardStar = styled.img`
 `;
 
 export const CarrouselCardAvaliationText = styled.p`
-  color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.black200};
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 2.8rem;

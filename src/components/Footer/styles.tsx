@@ -7,10 +7,6 @@ export const FooterContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-
-  // @media only screen and (max-width: 1180px) {
-  //   padding-bottom: 4rem;
-  // }
 `;
 
 export const FooterContent = styled.div`
@@ -20,7 +16,6 @@ export const FooterContent = styled.div`
   align-items: flex-start;
 
   @media only screen and (max-width: 768px) {
-    // flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
@@ -39,7 +34,7 @@ export const FooterContentItem = styled.div`
     display: block;
     width: 0;
     height: 1px;
-    background: ${({ theme }) => theme.colors.primaryblue};
+    background: ${({ theme }) => theme.colors.primaryBlue};
     transition: width 0.4s;
     border-radius: 4px;
   }
@@ -102,8 +97,8 @@ export const FooterBottomCenterText = styled.p`
 export const FooterIconLink = styled.a``;
 
 export const FooterIconContato = styled.img`
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.7rem;
+  height: 1.7rem;
 `;
 
 export const FooterContatoLink = styled.a`
@@ -114,7 +109,7 @@ export const FooterContatoLink = styled.a`
     display: block;
     width: 0;
     height: 2px;
-    background: ${({ theme }) => theme.colors.primaryblue};
+    background: ${({ theme }) => theme.colors.primaryBlue};
     transition: width 0.4s;
     border-radius: 4px;
   }
@@ -146,7 +141,7 @@ export const FooterBottomLink = styled.a`
     display: block;
     width: 0;
     height: 1px;
-    background: ${({ theme }) => theme.colors.primaryblue};
+    background: ${({ theme }) => theme.colors.primaryBlue};
     transition: width 0.4s;
     border-radius: 4px;
   }

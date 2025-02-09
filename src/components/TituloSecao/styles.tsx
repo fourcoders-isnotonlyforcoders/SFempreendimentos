@@ -12,7 +12,7 @@ export const TituloSecaoContainer = styled.div<{
 export const PreTituloSecao = styled.p`
   font-size: 1.8rem;
   letter-spacing: 0.3rem;
-  color: ${(props) => props.theme.colors.primaryblue};
+  color: ${(props) => props.theme.colors.primaryBlue};
 `;
 
 export const TituloSecao = styled.div<{

@@ -5,7 +5,7 @@ export const SecaoContatoBackground = styled.div`
   background: linear-gradient(
     180deg,
     ${({ theme }) => theme.colors.white} 0%,
-    ${({ theme }) => theme.colors.secondary} 100%
+    ${({ theme }) => theme.colors.black} 100%
   );
 `;
 
@@ -17,7 +17,8 @@ export const SecaoContatoContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding: 9rem 12rem 4rem;
+  padding: 9rem 12rem;
+  gap: 4rem;
 
   @media only screen and (max-width: 1180px) {
     padding: 5rem 2rem 8rem;
@@ -44,5 +45,5 @@ export const SecaoContatoText = styled.p`
 `;
 
 export const SecaoContatoStrong = styled.strong`
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primaryBlue};
 `;

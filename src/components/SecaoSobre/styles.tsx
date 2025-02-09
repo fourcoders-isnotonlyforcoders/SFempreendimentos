@@ -51,7 +51,7 @@ export const SobreParagraph = styled.p`
   font-weight: 500;
   line-height: 22px;
   padding: 1rem 2rem 1rem 0;
-  color: ${(props) => props.theme.colors.secundary};
+  color: ${(props) => props.theme.colors.secondary};
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   filter: brightness(0.9);
   transition: all 0.3s ease;
@@ -109,7 +109,7 @@ export const SobreCenter = styled.div`
   background: linear-gradient(
     to top,
     transparent 0%,
-    ${(props) => props.theme.colors.primaryblue} 50%,
+    ${(props) => props.theme.colors.primaryBlue} 50%,
     transparent 100%
   );
   animation: pulse 3s ease-in-out infinite;

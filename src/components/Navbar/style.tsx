@@ -36,7 +36,7 @@ export const NavbarMenuItem = styled.a<{ transition: string }>`
     display: block;
     width: 0;
     height: 2px;
-    background: ${({ theme }) => theme.colors.primaryblue};
+    background: ${({ theme }) => theme.colors.primaryBlue};
     transition: width 0.4s;
     border-radius: 4px;
   }

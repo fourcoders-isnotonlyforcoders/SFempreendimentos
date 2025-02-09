@@ -1,11 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-
-// @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 html,
 body {
-    background: ${(props) => props.theme.colors.black100};
+    background: ${(props) => props.theme.colors.black};
     font-family: 'Inter', sans-serif;
     font-size: 10px;
     scroll-behavior: smooth;
@@ -17,7 +15,6 @@ body {
     overflow-y: hidden;
 }
 
-
 a {
     color: inherit;
     text-decoration: none;
@@ -27,8 +24,22 @@ a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    &::-webkit-scrollbar {
+        width: 0.6rem;
+        height: 0.5rem;
+        background-color: ${({ theme }) => theme.colors.black};
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: ${({ theme }) => theme.colors.primaryBlue};
+    }
 }
+
 button{
     all: unset;
 }
+
+
 `;

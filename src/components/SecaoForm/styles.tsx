@@ -46,9 +46,9 @@ export const NameInput = styled.input`
   display: block;
   width: 100%;
   border: none;
-  border-bottom: 2px solid ${(props) => props.theme.colors.complementaryblue};
+  border-bottom: 2px solid ${(props) => props.theme.colors.complementaryBlue};
   background: transparent;
-  color: ${(props) => props.theme.colors.secundary};
+  color: ${(props) => props.theme.colors.secondary};
 
   &::placeholder {
     color: transparent;
@@ -56,7 +56,7 @@ export const NameInput = styled.input`
 
   &:focus {
     outline: none;
-    border-bottom: 2px solid ${(props) => props.theme.colors.primaryblue};
+    border-bottom: 2px solid ${(props) => props.theme.colors.primaryBlue};
   }
 
   &:focus ~ label,
@@ -64,7 +64,7 @@ export const NameInput = styled.input`
   &:valid ~ label {
     top: -22px;
     font-size: 1.6rem;
-    color: ${(props) => props.theme.colors.primaryblue};
+    color: ${(props) => props.theme.colors.primaryBlue};
   }
 
   &:focus ~ .bar:before,
@@ -74,7 +74,7 @@ export const NameInput = styled.input`
 `;
 
 export const NameTitle = styled.label`
-  color: ${(props) => props.theme.colors.complementaryblue};
+  color: ${(props) => props.theme.colors.complementaryBlue};
   font-size: 18px;
   font-weight: normal;
   position: absolute;
@@ -96,7 +96,7 @@ export const Bar = styled.span`
     height: 2px;
     width: 0;
     position: absolute;
-    background: ${(props) => props.theme.colors.complementaryblue};
+    background: ${(props) => props.theme.colors.complementaryBlue};
     transition: 0.2s ease all;
   }
 
@@ -117,19 +117,19 @@ export const FormTextContainer = styled.div`
     width: 100%;
     padding: 1rem;
     font-size: 1.8rem;
-    border: 2px solid ${(props) => props.theme.colors.complementaryblue};
+    border: 2px solid ${(props) => props.theme.colors.complementaryBlue};
     border-radius: 4px;
     resize: none;
     outline: none;
     background-color: transparent;
-    color: ${(props) => props.theme.colors.secundaryblue};
+    color: ${(props) => props.theme.colors.secondaryBlue};
   }
 
   ::placeholder {
-    color: ${(props) => props.theme.colors.complementaryblue};
+    color: ${(props) => props.theme.colors.complementaryBlue};
   }
   textarea:focus {
-    border: 2px solid ${(props) => props.theme.colors.primaryblue};
+    border: 2px solid ${(props) => props.theme.colors.primaryBlue};
   }
 `;
 
@@ -139,7 +139,7 @@ export const FormButton = styled.button`
   text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
-  color: ${(props) => props.theme.colors.primaryblue};
+  color: ${(props) => props.theme.colors.primaryBlue};
   width: 100%;
   border-radius: 8px;
   cursor: pointer;
