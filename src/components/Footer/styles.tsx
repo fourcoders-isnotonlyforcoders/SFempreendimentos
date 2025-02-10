@@ -14,7 +14,9 @@ export const FooterContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
+  border-bottom: 1px solid ${(props) => props.theme.colors.black200};
+  padding: 2rem 0;
+  margin-bottom: 4rem;
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -28,6 +30,7 @@ export const FooterContentItem = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
+  
 
   &::after {
     content: "";
@@ -49,8 +52,8 @@ export const FooterContentItem = styled.div`
 `;
 
 export const FooterContentItemTitle = styled.p`
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 700;
   color: ${({ theme }) => theme.colors.white};
 `;
 
@@ -62,8 +65,8 @@ export const FooterContentItemContent = styled.div`
 `;
 
 export const FooterContentItemText = styled.p`
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 500;
   color: ${({ theme }) => theme.colors.white};
 `;
 
@@ -97,8 +100,8 @@ export const FooterBottomCenterText = styled.p`
 export const FooterIconLink = styled.a``;
 
 export const FooterIconContato = styled.img`
-  width: 1.7rem;
-  height: 1.7rem;
+  width: 2rem;
+  height: 2rem;
 `;
 
 export const FooterContatoLink = styled.a`
@@ -131,7 +134,7 @@ export const FooterBottomIconRedeSocial = styled.img`
 `;
 
 export const FooterBottomLink = styled.a`
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 200;
   color: ${({ theme }) => theme.colors.white};
   cursor: pointer;

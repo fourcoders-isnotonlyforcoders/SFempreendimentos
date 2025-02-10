@@ -15,13 +15,16 @@ import {
   FooterIconContato,
   FooterIconLink
 } from "./styles";
+import { Logo } from "../Logo";
 
 export const Footer = () => {
   return (
     <FooterContainer>
       <FooterContent>
         <FooterContentItem>
-          <FooterContentItemTitle>LOGO</FooterContentItemTitle>
+          <FooterContentItemTitle>
+            <Logo/>
+          </FooterContentItemTitle>
           <FooterContentItemText>
             Construtora de alto padrão em RP
           </FooterContentItemText>
