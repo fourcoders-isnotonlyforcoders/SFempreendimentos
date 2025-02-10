@@ -39,7 +39,7 @@ export const Carrousel: React.FC = () => {
   return (
     <CarrouselContainer>
       <CarrouselButton
-        src={"./simple-arrow-left.svg"}
+        src={"./icons/simple-arrow-left.svg"}
         onClick={(e) => handleMove(e, "prev")}
         data-aos="fade-right"
         data-aos-duration="500"
@@ -51,7 +51,7 @@ export const Carrousel: React.FC = () => {
               <CarrouselCardAvaliation>
                 <CarrouselCardStars>
                   {[...Array(5)].map(() => (
-                    <CarrouselCardStar src="./star.svg" />
+                    <CarrouselCardStar src="./icons/star.svg" />
                   ))}
                 </CarrouselCardStars>
                 <CarrouselCardAvaliationText>
@@ -61,7 +61,7 @@ export const Carrousel: React.FC = () => {
                 </CarrouselCardAvaliationText>
               </CarrouselCardAvaliation>
               <CarrouselCardAuthor>
-                <CarrouselCardAuthorImage src="./test.jpg" />
+                <CarrouselCardAuthorImage src="./images/test.jpg" />
                 <CarrouselCardAuthorInfo>
                   <CarrouselCardAuthorInfoText>
                     Victor Hugo.
@@ -76,7 +76,7 @@ export const Carrousel: React.FC = () => {
         })}
       </CarrouselCardContainer>
       <CarrouselButton
-        src={"./simple-arrow-right.svg"}
+        src={"./icons/simple-arrow-right.svg"}
         onClick={(e) => handleMove(e, "next")}
         data-aos="fade-left"
         data-aos-duration="500"

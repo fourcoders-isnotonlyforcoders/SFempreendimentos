@@ -6,7 +6,7 @@ export const SecaoinicialBackground = styled.div`
       ${({ theme }) => theme.colors.black} 40%,
       transparent 80%
     ),
-    url("./house-img.avif") no-repeat top right;
+    url("./images/house-img.avif") no-repeat top right;
   background-size: contain;
   height: 95vh;
 
@@ -16,7 +16,7 @@ export const SecaoinicialBackground = styled.div`
         ${({ theme }) => theme.colors.black} 60%,
         transparent 100%
       ),
-      url("./house-img.avif") no-repeat top center;
+      url("./images/house-img.avif") no-repeat top center;
     background-size: contain;
     height: 85vh;
   }

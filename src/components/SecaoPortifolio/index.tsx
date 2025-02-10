@@ -20,7 +20,7 @@ export const SecaoPortifolio = () => {
       <SecaoPortifolioCardsContainer>
         {[...Array(6)].map((_, index) => (
           <SecaoPortifolioCard key={index}>
-            <SecaoPortifolioCardImage src="./house-img.avif" />
+            <SecaoPortifolioCardImage src="./images/house-img.avif" />
           </SecaoPortifolioCard>
         ))}
       </SecaoPortifolioCardsContainer>

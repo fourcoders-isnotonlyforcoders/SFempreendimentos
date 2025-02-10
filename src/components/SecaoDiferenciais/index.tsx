@@ -17,25 +17,25 @@ type DiferenciaisCardType = {
 
 const DIFERENCIAIS: DiferenciaisCardType[] = [
   {
-    icon: "./building.svg",
+    icon: "./icons/building.svg",
     titulo: "Excelência",
     descricao:
       "Acabamentos impecáveis, materiais nobres e atenção aos mínimos detalhes."
   },
   {
-    icon: "./diamond.svg",
+    icon: "./icons/diamond.svg",
     titulo: "Exclusividade",
     descricao:
       "Projetos personalizados para atender perfeitamente às necessidades e desejos do cliente."
   },
   {
-    icon: "./clock-1.svg",
+    icon: "./icons/clock.svg",
     titulo: "Pontualidade",
     descricao:
       "Cumprimento rigoroso dos prazos sem comprometer a qualidade da obra."
   },
   {
-    icon: "./leaf.svg",
+    icon: "./icons/leaf.svg",
     titulo: "Sustentabilidade",
     descricao:
       "Uso de tecnologias e materiais que reduzem impactos ambientais e elevam a eficiência."

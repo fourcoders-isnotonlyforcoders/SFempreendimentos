@@ -89,7 +89,7 @@ export const SecaoServicosItemLink = styled.a`
   transition: filter 0.4s;
 
   &::after {
-    content: url("./arrow-right.svg");
+    content: url("./icons/arrow-right.svg");
     width: 4rem;
   }
 

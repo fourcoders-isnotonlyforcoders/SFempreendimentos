@@ -23,7 +23,7 @@ export const Footer = () => {
       <FooterContent>
         <FooterContentItem>
           <FooterContentItemTitle>
-            <Logo/>
+            <Logo />
           </FooterContentItemTitle>
           <FooterContentItemText>
             Construtora de alto padrão em RP
@@ -33,7 +33,7 @@ export const Footer = () => {
           <FooterContentItemTitle>Redes Sociais</FooterContentItemTitle>
           <FooterContentItemContent>
             <FooterIconLink href="">
-              <FooterBottomIconRedeSocial src={"./instagram.svg"} />
+              <FooterBottomIconRedeSocial src={"./icons/instagram.svg"} />
             </FooterIconLink>
           </FooterContentItemContent>
         </FooterContentItem>
@@ -42,13 +42,13 @@ export const Footer = () => {
           <FooterContentItemContent>
             <FooterContatoLink>
               <FooterContato>
-                <FooterIconContato src={"./whatsapp.svg"} />
+                <FooterIconContato src={"./icons/whatsapp.svg"} />
                 <FooterContentItemText>(11) 99999-9999</FooterContentItemText>
               </FooterContato>
             </FooterContatoLink>
             <FooterContatoLink>
               <FooterContato>
-                <FooterIconContato src={"./email.svg"} />
+                <FooterIconContato src={"./icons/email.svg"} />
                 <FooterContentItemText>contato@sf.com.br</FooterContentItemText>
               </FooterContato>
             </FooterContatoLink>
