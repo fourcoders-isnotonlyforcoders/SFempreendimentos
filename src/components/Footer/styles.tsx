@@ -65,7 +65,7 @@ export const FooterContentItemContent = styled.div`
 `;
 
 export const FooterContentItemText = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: ${({ theme }) => theme.colors.white};
 `;
