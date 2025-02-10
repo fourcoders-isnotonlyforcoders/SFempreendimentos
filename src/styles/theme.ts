@@ -10,5 +10,6 @@ export const theme = {
     complementaryBlue: "#233A68",
     secondary: "#AAABAD",
     yellow:"#FDC244",
+    third: "#333",
   }
 }; 

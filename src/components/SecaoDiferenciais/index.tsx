@@ -50,7 +50,7 @@ export const SecaoDiferenciais = () => {
           titulo="Por que nos contratar ?"
           preTitulo="DIFERENCIAIS"
           align="center"
-          color="black200"
+          color="#000312"
         />
         <SecaoDiferenciaisCardsContainer>
           {DIFERENCIAIS.map(({ icon, titulo, descricao }, index) => (

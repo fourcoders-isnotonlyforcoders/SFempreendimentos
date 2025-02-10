@@ -5,7 +5,7 @@ export const SecaoContatoBackground = styled.div`
   background: linear-gradient(
     180deg,
     ${({ theme }) => theme.colors.white} 0%,
-    ${({ theme }) => theme.colors.black} 100%
+    ${({ theme }) => theme.colors.black} 99%
   );
 `;
 
@@ -38,12 +38,13 @@ export const SecaoContatoContent = styled.div`
 `;
 
 export const SecaoContatoText = styled.p`
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
-  color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.black};
 `;
 
 export const SecaoContatoStrong = styled.strong`
   color: ${({ theme }) => theme.colors.primaryBlue};
+  font-weight: bold;
 `;

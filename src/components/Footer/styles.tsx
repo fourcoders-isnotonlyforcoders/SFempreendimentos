@@ -14,8 +14,8 @@ export const FooterContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  border-bottom: 1px solid ${(props) => props.theme.colors.black200};
-  padding: 2rem 0;
+  border-bottom: 1px solid ${(props) => props.theme.colors.third};
+  padding: 2rem 0 4rem 0;
   margin-bottom: 4rem;
   @media only screen and (max-width: 768px) {
     flex-direction: column;
@@ -30,30 +30,14 @@ export const FooterContentItem = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
-  
-
-  &::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 1px;
-    background: ${({ theme }) => theme.colors.primaryBlue};
-    transition: width 0.4s;
-    border-radius: 4px;
-  }
-
   @media only screen and (max-width: 768px) {
     gap: 2rem;
-
-    &::after {
-      width: 100%;
-    }
   }
 `;
 
 export const FooterContentItemTitle = styled.p`
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: bold;
   color: ${({ theme }) => theme.colors.white};
 `;
 
@@ -65,9 +49,9 @@ export const FooterContentItemContent = styled.div`
 `;
 
 export const FooterContentItemText = styled.p`
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: ${({ theme }) => theme.colors.white};
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: ${({ theme }) => theme.colors.secondary};
 `;
 
 export const FooterBottom = styled.div`
@@ -90,7 +74,7 @@ export const FooterBottomCenter = styled.div`
 export const FooterBottomCenterText = styled.p`
   font-size: 1rem;
   font-weight: 200;
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.secondary};
 
   @media only screen and (max-width: 768px) {
     font-size: 0.7rem;
@@ -106,19 +90,10 @@ export const FooterIconContato = styled.img`
 
 export const FooterContatoLink = styled.a`
   cursor: pointer;
-
-  &::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: ${({ theme }) => theme.colors.primaryBlue};
-    transition: width 0.4s;
-    border-radius: 4px;
-  }
-
-  &:hover::after {
-    width: 100%;
+  opacity: .9;
+  &:hover {
+    opacity: 1;
+    filter: brightness(1.4);
   }
 `;
 
@@ -135,22 +110,12 @@ export const FooterBottomIconRedeSocial = styled.img`
 
 export const FooterBottomLink = styled.a`
   font-size: 1.1rem;
-  font-weight: 200;
-  color: ${({ theme }) => theme.colors.white};
+  font-weight: 300;
+  color: ${({ theme }) => theme.colors.secondary};
   cursor: pointer;
 
-  &::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 1px;
-    background: ${({ theme }) => theme.colors.primaryBlue};
-    transition: width 0.4s;
-    border-radius: 4px;
-  }
-
-  &:hover::after {
-    width: 100%;
+  &:hover{
+    filter: brightness(1.3);
   }
 
   @media only screen and (max-width: 768px) {

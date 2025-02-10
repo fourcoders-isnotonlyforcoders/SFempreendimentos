@@ -61,7 +61,7 @@ export const Carrousel: React.FC = () => {
                 </CarrouselCardAvaliationText>
               </CarrouselCardAvaliation>
               <CarrouselCardAuthor>
-                <CarrouselCardAuthorImage src="./images/test.jpg" />
+                <CarrouselCardAuthorImage src="./images/logo.png" />
                 <CarrouselCardAuthorInfo>
                   <CarrouselCardAuthorInfoText>
                     Victor Hugo.

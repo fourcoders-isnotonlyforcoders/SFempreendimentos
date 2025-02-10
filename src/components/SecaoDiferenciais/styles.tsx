@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const SecaoDiferenciaisBackground = styled.div`
   background: linear-gradient(
     to bottom,
-    #fefefa,
-    #fefefa,
-    rgba(0, 0, 0, 0) 99%
+    #F5F5F5,
+    #F5F5F5,
+    rgba(0, 0, 0, 0) 98%
   );
   border-top-right-radius: 222px;
 `;
@@ -39,10 +39,10 @@ export const SecaoDiferenciaisCard = styled.div`
   min-height: 320px;
   padding: 2rem;
   border-radius: 12px;
-  background-color: ${({ theme }) => theme.colors.offBlack};
-  border: 2.5px solid ${({ theme }) => theme.colors.offBlack};
+  background-color: ${({ theme }) => theme.colors.black};
+  border: 2.5px solid ${({ theme }) => theme.colors.black};
   transition: scale 0.4s, opacity 0.5s, transform 0.5s !important;
-  cursor: default;
+  cursor: pointer;
 
   &:hover {
     scale: 1.05;
