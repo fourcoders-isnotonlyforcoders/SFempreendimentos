@@ -2,7 +2,10 @@ import { useState } from "react";
 import { TituloSecao } from "../TituloSecao";
 import {
   AccordionCard,
+  AccordionCardContent,
   AccordionCardIcon,
+  AccordionCardPreviewContainer,
+  AccordionCardTitle,
   AccordionContainer,
   AccordionContentContainer,
   AccordionTitle,
@@ -10,6 +13,7 @@ import {
   SecaoDuvidasBackground,
   SecaoDuvidasContainer
 } from "./styles";
+import { DUVIDAS } from "../../constants/duvidas";
 
 export const SecaoDuvidas: React.FC = () => {
   const [active, setActive] = useState<number>();
@@ -24,22 +28,30 @@ export const SecaoDuvidas: React.FC = () => {
         />
         <AccordionContainer>
           <AccordionTitleContainer>
-            <AccordionTitle>Dúvidas Frequentes</AccordionTitle>
+            <AccordionTitle data-aos="fade-right" data-aos-duration="500">
+              Dúvidas Frequentes
+            </AccordionTitle>
           </AccordionTitleContainer>
           <AccordionContentContainer>
-            {[...Array(6)].map((_, index) => (
+            {DUVIDAS.map(({ title, content }, index) => (
               <AccordionCard
                 key={index}
                 onClick={() =>
                   active === index ? setActive(undefined) : setActive(index)
                 }
-                active={index === active}
+                data-aos="fade-left"
+                data-aos-duration={index + 3 + "00"}
               >
-                test <br></br>
-                <AccordionCardIcon
-                  src="./icons/simple-arrow-left.svg" // TODO: Alterar para outra 'Seta'
-                  active={index === active}
-                />
+                <AccordionCardPreviewContainer>
+                  <AccordionCardTitle>{title}</AccordionCardTitle>
+                  <AccordionCardIcon
+                    src="./icons/simple-arrow-bottom.svg"
+                    active={index === active}
+                  />
+                </AccordionCardPreviewContainer>
+                <AccordionCardContent active={active === index}>
+                  {content}
+                </AccordionCardContent>
               </AccordionCard>
             ))}
           </AccordionContentContainer>
