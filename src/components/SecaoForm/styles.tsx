@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SecaoFormContainer = styled.section`
   height: 100%;
-  padding: 4rem 2rem;
+  padding: 10rem 2rem;
   display: flex;
   flex-direction: column;
   margin: 2rem auto;

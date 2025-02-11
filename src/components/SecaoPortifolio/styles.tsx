@@ -8,7 +8,7 @@ export const SecaoPortifolioContainer = styled.div`
   width: 100%;
   max-width: 1350px;
   margin: 0 auto;
-  padding: 8rem 8rem;
+  padding: 10rem 8rem;
 `;
 
 export const SecaoPortifolioCardsContainer = styled.div`

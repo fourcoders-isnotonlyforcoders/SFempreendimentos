@@ -4,8 +4,8 @@ export const SecaoContatoBackground = styled.div`
   width: 100%;
   background: linear-gradient(
     180deg,
-    ${({ theme }) => theme.colors.white} 0%,
-    ${({ theme }) => theme.colors.black} 99%
+    ${({ theme }) => theme.colors.white} 25%,
+    ${({ theme }) => theme.colors.black} 100%
   );
 `;
 

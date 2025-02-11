@@ -11,7 +11,6 @@ export const SecaoDepoimentosBackground = styled.div`
 
   @media only screen and (max-width: 768px) {
     border-radius: 200px 0px 0px 0px;
-    padding: 6rem 0 0;
   }
 `;
 
@@ -22,11 +21,11 @@ export const SecaoDepoimentosContainer = styled.div`
   width: 100%;
   max-width: 1350px;
   margin: 0 auto;
-  padding: 2rem 8rem 14rem;
-  gap: 11rem;
+  padding: 10rem 8rem;
+  gap: 6rem;
 
   @media only screen and (max-width: 768px) {
-    padding: 2rem 2rem 10rem;
+    padding: 8rem 2rem 10rem;
   }
 `;
 
@@ -41,10 +40,17 @@ export const SecaoDepoimentosContent = styled.div`
 
 export const CarrouselContainer = styled.div`
   display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  min-height: 26rem;
+  width: 100%;
+`;
+
+export const CarrouselContentContainer = styled.div`
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 4rem;
-  min-height: 26rem;
   width: 100%;
 `;
 
@@ -120,4 +126,26 @@ export const CarrouselButton = styled.img`
   width: 33px;
   height: 33px;
   cursor: pointer;
+`;
+
+export const CarrouselNavigation = styled.div`
+  display: flex;
+  padding: 1rem 0;
+  gap: 1.5rem;
+  justify-content: center;
+`;
+
+export const CarrouselNavigationButton = styled.button<{ active: boolean }>`
+  border: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: ${({ active, theme }) =>
+    active ? theme.colors.complementaryBlue : "#c5c5c5"};
+  border-radius: 99999px;
+  padding: 0.5rem;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 `;
