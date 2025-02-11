@@ -6,9 +6,9 @@ export const SecaoinicialBackground = styled.div`
       ${({ theme }) => theme.colors.black} 40%,
       transparent 80%
     ),
-    url("./images/house-img.avif") no-repeat top right;
-  background-size: contain;
-  height: 95vh;
+    url("./images/bg.png") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
 
   @media only screen and (max-width: 1180px) {
     background: linear-gradient(
@@ -16,8 +16,8 @@ export const SecaoinicialBackground = styled.div`
         ${({ theme }) => theme.colors.black} 60%,
         transparent 100%
       ),
-      url("./images/house-img.avif") no-repeat top center;
-    background-size: contain;
+      url("./images/bg.png") no-repeat center center;
+    background-size: cover; 
     height: 85vh;
   }
 `;
@@ -26,13 +26,13 @@ export const SecaoInicialContainer = styled.div`
   display: flex;
   max-width: 1350px;
   margin: 0 auto;
-  padding: 5.875rem 8rem;
+  padding: 4rem 8rem;
   height: 100%;
-
   @media only screen and (max-width: 1180px) {
     padding-bottom: 0;
   }
 `;
+//TODO: colocar imagem certa depois 
 
 export const SecaoInicialContent = styled.div`
   display: flex;
