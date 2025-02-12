@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const FooterContainer = styled.div`
@@ -72,8 +73,8 @@ export const FooterBottomCenter = styled.div`
 `;
 
 export const FooterBottomCenterText = styled.p`
-  font-size: 1rem;
-  font-weight: 200;
+  font-size: 1.1rem;
+  font-weight: 300;
   color: ${({ theme }) => theme.colors.secondary};
 
   @media only screen and (max-width: 768px) {
@@ -90,7 +91,7 @@ export const FooterIconContato = styled.img`
 
 export const FooterContatoLink = styled.a`
   cursor: pointer;
-  opacity: .9;
+  opacity: 0.9;
   &:hover {
     opacity: 1;
     filter: brightness(1.4);
@@ -108,13 +109,13 @@ export const FooterBottomIconRedeSocial = styled.img`
   height: 3rem;
 `;
 
-export const FooterBottomLink = styled.a`
+export const FooterBottomLink = styled(Link)`
   font-size: 1.1rem;
   font-weight: 300;
   color: ${({ theme }) => theme.colors.secondary};
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     filter: brightness(1.3);
   }
 
