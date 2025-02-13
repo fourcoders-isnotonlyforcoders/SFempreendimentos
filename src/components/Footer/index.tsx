@@ -73,7 +73,7 @@ export const Footer = () => {
             Desenvolvido por FourCoders
           </FooterBottomLink>
         </FooterBottomCenter>
-        <FooterBottomLink to={"/termos"}>Termos</FooterBottomLink>
+        <FooterBottomLink to={"/termos"}>Termos de uso</FooterBottomLink>
       </FooterBottom>
     </FooterContainer>
   );

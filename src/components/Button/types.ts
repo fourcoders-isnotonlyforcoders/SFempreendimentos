@@ -17,3 +17,8 @@ export type styleType = {
   color: string;
   border: string;
 };
+
+export type ButtonReturnProps = {
+  to: string;
+};
+
