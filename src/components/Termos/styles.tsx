@@ -10,25 +10,29 @@ export const TermosContainer = styled.div`
 `;
 
 export const TermosTitle = styled.h1`
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   padding: 4rem 0 3rem;
   color: ${({ theme }) => theme.colors.white};
 `;
 
 export const TermosubTitle = styled.h3`
-  font-size: 1.3rem;
+  font-size: 2rem;
   padding: 2rem 0 0.5rem;
   color: ${({ theme }) => theme.colors.white};
 `;
 
-export const TermosText = styled.p``;
+export const TermosText = styled.p`
+font-size: 1.7rem;
+`;
 
 export const TermosStrong = styled.strong`
   color: ${({ theme }) => theme.colors.white};
 `;
 
-export const TermosReturnButton = styled.div``;
+export const TermosReturnButton = styled.div`
+border: 1px solid green;
+`;
 
 export const TermosSessionText = styled.div`
   display: flex;
@@ -42,4 +46,6 @@ export const TermosList = styled.ul`
   list-style-image: url(./icons/logo.svg);
 `;
 
-export const TermosListItem = styled.li``;
+export const TermosListItem = styled.li`
+font-size: 1.4rem;
+`;

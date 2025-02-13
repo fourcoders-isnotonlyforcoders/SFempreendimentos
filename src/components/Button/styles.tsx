@@ -53,7 +53,10 @@ export const ButtonReturnContainer = styled(Link)`
   );
 
   &:hover {
-    background: ${({ theme }) => theme.colors.white};
+    transform: scale(1.04);
+    opacity: 1;
+    filter: brightness(1.1);
+    box-shadow: 0 0 22px 2px rgba(80, 150, 255, 0.22);
   }
 `;
 
@@ -61,4 +64,5 @@ export const ButtonReturnIcon = styled.img`
   width: 2.5rem;
   height: 2.5rem;
   transform: rotateY(3.142rad);
+
 `;
