@@ -24,8 +24,7 @@ export const SecaoDiferenciaisContainer = styled.div`
 export const SecaoDiferenciaisCardsContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 2rem;
 `;
 
@@ -35,9 +34,9 @@ export const SecaoDiferenciaisCard = styled.div`
   align-items: flex-start;
   gap: 2rem;
   width: 100%;
-  width: 23%;
-  min-height: 320px;
-  padding: 2rem;
+  width: 25%;
+  min-height: 333px;
+  padding: 2rem 1.5rem;
   border-radius: 12px;
   background-color: ${({ theme }) => theme.colors.black};
   border: 2.5px solid ${({ theme }) => theme.colors.black};
@@ -55,7 +54,7 @@ export const SecaoDiferenciaisCardIcon = styled.img`
 `;
 
 export const SecaoDiferenciaisCardTitle = styled.h3`
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.white};
 
@@ -74,7 +73,7 @@ export const SecaoDiferenciaisCardTitle = styled.h3`
 `;
 
 export const SecaoDiferenciaisCardDescription = styled.p`
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 400;
   color: ${({ theme }) => theme.colors.secondary};
 `;

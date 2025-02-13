@@ -48,3 +48,4 @@ export const SecaoContatoStrong = styled.strong`
   color: ${({ theme }) => theme.colors.primaryBlue};
   font-weight: bold;
 `;
+

@@ -20,7 +20,7 @@ export const SecaoServicos: React.FC = () => {
       />
       <SecaoServicosItemsContainer>
         <SecaoServicosItem >
-          <SecaoServicosItemTitle data-aos="fade-right" data-aos-duration="550" >Construção</SecaoServicosItemTitle>
+          <SecaoServicosItemTitle data-aos="fade-right" data-aos-duration="550" >Projetos Personalizados</SecaoServicosItemTitle>
           <SecaoServicosItemContent>
             <SecaoServicosItemDescription data-aos="fade-right" data-aos-duration="500">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
@@ -31,7 +31,8 @@ export const SecaoServicos: React.FC = () => {
           </SecaoServicosItemContent>
         </SecaoServicosItem>
         <SecaoServicosItem>
-          <SecaoServicosItemTitle data-aos="fade-right" data-aos-duration="650">Construção</SecaoServicosItemTitle>
+          <SecaoServicosItemTitle data-aos="fade-right" data-aos-duration="650">Reformas e Ampliações 
+          </SecaoServicosItemTitle>
           <SecaoServicosItemContent>
             <SecaoServicosItemDescription data-aos="fade-right" data-aos-duration="600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
@@ -43,6 +44,28 @@ export const SecaoServicos: React.FC = () => {
         </SecaoServicosItem>
         <SecaoServicosItem>
           <SecaoServicosItemTitle data-aos="fade-right" data-aos-duration="750">Construção</SecaoServicosItemTitle>
+          <SecaoServicosItemContent>
+            <SecaoServicosItemDescription data-aos="fade-right" data-aos-duration="700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim.
+            </SecaoServicosItemDescription>
+            <SecaoServicosItemLink data-aos="fade-left" data-aos-duration="700">Saiba mais</SecaoServicosItemLink>
+          </SecaoServicosItemContent>
+        </SecaoServicosItem>
+        <SecaoServicosItem>
+          <SecaoServicosItemTitle data-aos="fade-right" data-aos-duration="750">Manutenções </SecaoServicosItemTitle>
+          <SecaoServicosItemContent>
+            <SecaoServicosItemDescription data-aos="fade-right" data-aos-duration="700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim.
+            </SecaoServicosItemDescription>
+            <SecaoServicosItemLink data-aos="fade-left" data-aos-duration="700">Saiba mais</SecaoServicosItemLink>
+          </SecaoServicosItemContent>
+        </SecaoServicosItem>
+        <SecaoServicosItem>
+          <SecaoServicosItemTitle data-aos="fade-right" data-aos-duration="750">Demolição</SecaoServicosItemTitle>
           <SecaoServicosItemContent>
             <SecaoServicosItemDescription data-aos="fade-right" data-aos-duration="700">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do

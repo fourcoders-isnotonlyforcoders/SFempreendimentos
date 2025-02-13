@@ -96,3 +96,9 @@ export const AccordionCardContent = styled.div<{ active: boolean }>`
   padding: 0 3rem ${({ active }) => (active ? "3rem" : 0)};
   transition: 0.5s linear ${({ active }) => (active ? "" : ", opacity 0s")};
 `;
+
+export const AccordionPreText = styled.p`
+  font-size: 1.8rem;
+  letter-spacing: 0.3rem;
+  color: ${(props) => props.theme.colors.primaryBlue};
+`;

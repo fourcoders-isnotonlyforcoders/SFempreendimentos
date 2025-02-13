@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { TituloSecao } from "../TituloSecao";
 import {
   AccordionCard,
   AccordionCardContent,
@@ -11,7 +10,8 @@ import {
   AccordionTitle,
   AccordionTitleContainer,
   SecaoDuvidasBackground,
-  SecaoDuvidasContainer
+  SecaoDuvidasContainer,
+  AccordionPreText
 } from "./styles";
 import { DUVIDAS } from "../../constants/duvidas";
 
@@ -20,15 +20,12 @@ export const SecaoDuvidas: React.FC = () => {
   return (
     <SecaoDuvidasBackground>
       <SecaoDuvidasContainer>
-        <TituloSecao
-          align="center"
-          color="black"
-          preTitulo="Dúvidas"
-          titulo="Dúvidas frequentes de nossos clientes"
-        />
         <AccordionContainer>
           <AccordionTitleContainer>
             <AccordionTitle data-aos="fade-right" data-aos-duration="500">
+              <AccordionPreText>
+                FAQ
+              </AccordionPreText>
               Dúvidas Frequentes
             </AccordionTitle>
           </AccordionTitleContainer>

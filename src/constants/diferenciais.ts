@@ -26,7 +26,7 @@ export const DIFERENCIAIS: DiferenciaisCardType[] = [
   },
   {
     icon: "./icons/leaf.svg",
-    titulo: "Sustentabilidade",
+    titulo: "Redução de Custos",
     descricao:
       "Uso de tecnologias e materiais que reduzem impactos ambientais e elevam a eficiência."
   }

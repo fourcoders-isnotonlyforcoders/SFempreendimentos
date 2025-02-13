@@ -34,6 +34,7 @@ export const SecaoContato = () => {
         </SecaoContatoContent>
         <Button content="ENTRAR EM CONTATO" onClick={() => {}} size="large" />
       </SecaoContatoContainer>
+
     </SecaoContatoBackground>
   );
 };
