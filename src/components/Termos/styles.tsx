@@ -31,7 +31,6 @@ export const TermosStrong = styled.strong`
 `;
 
 export const TermosReturnButton = styled.div`
-border: 1px solid green;
 `;
 
 export const TermosSessionText = styled.div`
