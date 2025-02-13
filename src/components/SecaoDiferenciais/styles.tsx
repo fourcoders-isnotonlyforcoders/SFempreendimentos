@@ -35,7 +35,7 @@ export const SecaoDiferenciaisCard = styled.div`
   gap: 2rem;
   width: 100%;
   width: 25%;
-  min-height: 333px;
+  min-height: 322px;
   padding: 2rem 1.5rem;
   border-radius: 12px;
   background-color: ${({ theme }) => theme.colors.black};
