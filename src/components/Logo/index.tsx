@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 export const Logo: React.FC = () => {
   return (
-    <div data-aos="fade-right" data-aos-duration="500">
+    <Link to={"/"} data-aos="fade-right" data-aos-duration="500">
       <LogoImg src={"./images/logo-white-blue.png"} />
-    </div>
+    </Link>
   );
 };
 const LogoImg = styled.img`

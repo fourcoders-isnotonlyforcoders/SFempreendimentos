@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const SecaoDiferenciaisBackground = styled.div`
   background: linear-gradient(
     to bottom,
-    #F5F5F5,
-    #F5F5F5,
+    #f5f5f5,
+    #f5f5f5,
     rgba(0, 0, 0, 0) 98%
   );
   border-top-right-radius: 222px;
@@ -18,7 +18,7 @@ export const SecaoDiferenciaisContainer = styled.div`
   width: 100%;
   max-width: 1350px;
   margin: 0 auto;
-  padding: 10rem 8rem;
+  padding: 10rem 8rem 20rem;
 `;
 
 export const SecaoDiferenciaisCardsContainer = styled.div`

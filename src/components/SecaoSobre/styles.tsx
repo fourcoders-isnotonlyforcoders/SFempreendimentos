@@ -9,7 +9,7 @@ export const SobreContainer = styled.div`
   justify-content: space-around;
   gap: 10px;
   align-items: center;
-  padding: 1rem 8rem;
+  padding: 10rem 8rem;
   margin: 0 auto;
   @media (max-width: 1024px) {
     padding: 0 3rem;

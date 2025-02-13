@@ -62,16 +62,18 @@ export const Footer = () => {
         </FooterContentItem>
       </FooterContent>
       <FooterBottom>
-        <FooterBottomLink>Política de Privacidade</FooterBottomLink>
+        <FooterBottomLink to={"/politicas"}>
+          Política de Privacidade
+        </FooterBottomLink>
         <FooterBottomCenter>
           <FooterBottomCenterText>
             © SF {new Date().getFullYear()}. Todos os direitos reservados.
           </FooterBottomCenterText>
-          <FooterBottomLink href="https://fourcoders.com.br">
+          <FooterBottomLink to="https://fourcoders.com.br">
             Desenvolvido por FourCoders
           </FooterBottomLink>
         </FooterBottomCenter>
-        <FooterBottomLink>Termos</FooterBottomLink>
+        <FooterBottomLink to={"/termos"}>Termos de uso</FooterBottomLink>
       </FooterBottom>
     </FooterContainer>
   );

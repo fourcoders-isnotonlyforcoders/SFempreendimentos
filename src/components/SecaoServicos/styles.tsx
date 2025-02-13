@@ -7,7 +7,7 @@ export const SecaoServicosContainer = styled.div`
   max-width: 1350px;
   width: 100%;
   margin: 0 auto;
-  padding: 7rem 8rem;
+  padding: 10rem 8rem 15rem;
   gap: 3rem;
 `;
 
@@ -92,7 +92,7 @@ export const SecaoServicosItemLink = styled.a`
     content: url("./icons/arrow-right.svg");
     width: 4rem;
   }
-  
+
   &:hover {
     filter: brightness(1.1);
   }
