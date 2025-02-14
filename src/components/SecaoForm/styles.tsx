@@ -14,8 +14,8 @@ export const FormContainer = styled.form`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
-  padding: 1rem 4rem 7rem 4rem;
+  gap: 2.2rem;
+  padding: 1rem 4rem 8rem 4rem;
   width: auto;
   max-width: 70%;
   margin: 2rem auto;
@@ -126,7 +126,7 @@ export const FormTextContainer = styled.div`
     resize: none;
     outline: none;
     background-color: transparent;
-    color: ${(props) => props.theme.colors.secondary};
+    color: ${(props) => props.theme.colors.primaryBlue};
   }
 
   ::placeholder {
