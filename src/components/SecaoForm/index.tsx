@@ -6,7 +6,10 @@ import {
   FormInfosContainer,
   FormNameContainer,
   FormTextContainer,
-  FormButton
+  FormButton,
+  PrimarySelect,
+  SelectsContainer,
+  Option,
 } from "./styles";
 import InputField from "./InputField";
 
@@ -32,6 +35,20 @@ export const SecaoForm: React.FC = () => {
           <InputField id="email" label="Email" type="email" required />
           <InputField id="phone" label="Telefone" type="tel" required />
         </FormInfosContainer>
+        <SelectsContainer>
+          <PrimarySelect id="select-id" defaultValue="1">
+            <Option value="1" disabled>
+              Serviço Desejado
+            </Option>{" "}
+            {/* Desabilita o primeiro valor */}
+            <Option value="2">Projetos Personalizados</Option>
+            <Option value="3">Reformas e Ampliações</Option>
+            <Option value="4">Construção</Option>
+            <Option value="5">Manutenções</Option>
+            <Option value="6">Demolição</Option>
+          </PrimarySelect>
+        </SelectsContainer>
+
         <FormTextContainer data-aos="fade-up-left" data-aos-duration="500">
           <textarea
             id="additionalInfo"

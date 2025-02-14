@@ -6,17 +6,21 @@ export const SecaoFormContainer = styled.section`
   display: flex;
   flex-direction: column;
   margin: 2rem auto;
+  
 `;
 
 export const FormContainer = styled.form`
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 22px;
-  padding: 1rem 0;
+  gap: 2rem;
+  padding: 1rem 4rem 7rem 4rem;
   width: auto;
   max-width: 70%;
-  margin: 0 auto;
+  margin: 2rem auto;
+  border: 2px solid ${(props) => props.theme.colors.secondaryBlue};
+  border-radius: 12px;
 `;
 
 export const FormNameContainer = styled.div`
@@ -46,9 +50,9 @@ export const NameInput = styled.input`
   display: block;
   width: 100%;
   border: none;
-  border-bottom: 2px solid ${(props) => props.theme.colors.complementaryBlue};
+  border-bottom: 2px solid ${(props) => props.theme.colors.secondaryBlue};
   background: transparent;
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.primaryBlue};
 
   &::placeholder {
     color: transparent;
@@ -74,8 +78,8 @@ export const NameInput = styled.input`
 `;
 
 export const NameTitle = styled.label`
-  color: ${(props) => props.theme.colors.complementaryBlue};
-  font-size: 18px;
+  color: ${(props) => props.theme.colors.secondaryBlue};
+  font-size: 1.6rem;
   font-weight: normal;
   position: absolute;
   left: 5px;
@@ -96,7 +100,7 @@ export const Bar = styled.span`
     height: 2px;
     width: 0;
     position: absolute;
-    background: ${(props) => props.theme.colors.complementaryBlue};
+    background: ${(props) => props.theme.colors.secondaryBlue};
     transition: 0.2s ease all;
   }
 
@@ -110,23 +114,23 @@ export const Bar = styled.span`
 `;
 
 export const FormTextContainer = styled.div`
-  margin-top: 22px;
+  margin-top: 2rem;
   width: auto;
   min-width: 100%;
   textarea {
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
     font-size: 1.8rem;
-    border: 2px solid ${(props) => props.theme.colors.complementaryBlue};
-    border-radius: 4px;
+    border: 2px solid ${(props) => props.theme.colors.secondaryBlue};
+    border-radius: 8px;
     resize: none;
     outline: none;
     background-color: transparent;
-    color: ${(props) => props.theme.colors.secondaryBlue};
+    color: ${(props) => props.theme.colors.secondary};
   }
 
   ::placeholder {
-    color: ${(props) => props.theme.colors.complementaryBlue};
+    color: ${(props) => props.theme.colors.secondaryBlue};
   }
   textarea:focus {
     border: 2px solid ${(props) => props.theme.colors.primaryBlue};
@@ -149,7 +153,7 @@ export const FormButton = styled.button`
     rgba(0, 123, 231, 0.11),
     rgba(80, 150, 255, 0.22)
   );
-
+  margin-top: 2rem;
   &:hover {
     border: 2px solid ${(props) => props.theme.colors.primary};
     color: ${(props) => props.theme.colors.primary};
@@ -161,3 +165,48 @@ export const FormButton = styled.button`
     );
   }
 `;
+
+export const SelectsContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem; 
+`;
+
+export const PrimarySelect = styled.select`
+  background: none;
+  color: ${(props) => props.theme.colors.secondaryBlue} !important;
+  border: 2px solid ${(props) => props.theme.colors.secondaryBlue};
+  padding: 2rem 1rem;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  width: 100%;
+  appearance: none; 
+  outline: none; 
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+
+  &:focus {
+    border-color: ${(props) => props.theme.colors.primaryBlue};
+    outline: none;
+  }
+  &:valid {
+    color: ${(props) => props.theme.colors.primaryBlue}; 
+  }
+`;
+
+export const Option = styled.option`
+  font-size: 1.8rem;
+  color: ${(props) => props.theme.colors.secondaryBlue} !important; 
+  padding: 1rem;
+  background-color: #000312 !important;
+  cursor: pointer !important;
+
+  &:focus {
+    border-color: ${(props) => props.theme.colors.primaryBlue};
+    outline: none;
+  }
+  &:valid {
+    color: ${(props) => props.theme.colors.primaryBlue}; 
+  }
+`; 
