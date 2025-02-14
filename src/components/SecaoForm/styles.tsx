@@ -51,6 +51,7 @@ export const NameInput = styled.input`
   width: 100%;
   border: none;
   border-bottom: 2px solid ${(props) => props.theme.colors.secondaryBlue};
+  border-radius: 4px;
   background: transparent;
   color: ${(props) => props.theme.colors.primaryBlue};
 
@@ -168,20 +169,19 @@ export const FormButton = styled.button`
 
 export const SelectsContainer = styled.div`
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin-top: 2rem; 
+  position: relative;
+  display: inline-block;
 `;
 
 export const PrimarySelect = styled.select`
   background: none;
   color: ${(props) => props.theme.colors.secondaryBlue} !important;
-  border: 2px solid ${(props) => props.theme.colors.secondaryBlue};
+  border: none;
+  border-bottom: 2px solid ${(props) => props.theme.colors.secondaryBlue};
   padding: 2rem 1rem;
-  border-radius: 8px;
   font-size: 1.6rem;
   width: 100%;
-  appearance: none; 
+  border-radius: 4px;
   outline: none; 
   transition: border-color 0.3s ease;
   cursor: pointer;
@@ -193,6 +193,7 @@ export const PrimarySelect = styled.select`
   &:valid {
     color: ${(props) => props.theme.colors.primaryBlue}; 
   }
+
 `;
 
 export const Option = styled.option`
@@ -210,3 +211,5 @@ export const Option = styled.option`
     color: ${(props) => props.theme.colors.primaryBlue}; 
   }
 `; 
+
+

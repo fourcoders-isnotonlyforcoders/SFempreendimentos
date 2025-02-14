@@ -9,7 +9,7 @@ import {
   FormButton,
   PrimarySelect,
   SelectsContainer,
-  Option,
+  Option
 } from "./styles";
 import InputField from "./InputField";
 
