@@ -77,32 +77,14 @@ export const SobreParagraph = styled.p`
 
 export const SobreCenter = styled.div`
   width: 3px;
-  height: 450px;
+  height: 400px;
   background: linear-gradient(
     to top,
     transparent 0%,
     ${(props) => props.theme.colors.primaryBlue} 50%,
     transparent 100%
   );
-  animation: pulse 3s ease-in-out infinite;
 
-  @keyframes pulse {
-    0% {
-      height: 200px;
-    }
-    25% {
-      height: 250px;
-    }
-    50% {
-      height: 300px;
-    }
-    75% {
-      height: 350px;
-    }
-    100% {
-      height: 400px;
-    }
-  }
 
   @media (max-width: 1024px) {
     display: none;
