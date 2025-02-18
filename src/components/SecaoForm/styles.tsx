@@ -20,7 +20,7 @@ export const FormContainer = styled.form`
   max-width: 70%;
   margin: 2rem auto;
   border: 2px solid ${(props) => props.theme.colors.secondaryBlue};
-  border-radius: 12px;
+  border-radius: 22px;
 `;
 
 export const FormNameContainer = styled.div`
@@ -123,7 +123,7 @@ export const FormTextContainer = styled.div`
     padding: 2rem;
     font-size: 1.8rem;
     border: 2px solid ${(props) => props.theme.colors.secondaryBlue};
-    border-radius: 8px;
+    border-radius: 12px;
     resize: none;
     outline: none;
     background-color: transparent;
@@ -140,13 +140,13 @@ export const FormTextContainer = styled.div`
 
 export const FormButton = styled.button`
   border: 2px solid ${(props) => props.theme.colors.fourth};
-  padding: 2rem 0;
+  padding: 2.2rem 0;
   text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
   color: ${(props) => props.theme.colors.primaryBlue};
   width: 100%;
-  border-radius: 8px;
+  border-radius: 99999px;
   cursor: pointer;
   transition: all 0.3s ease;
   background: radial-gradient(

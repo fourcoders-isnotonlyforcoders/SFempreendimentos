@@ -57,7 +57,7 @@ export const SecaoForm: React.FC = () => {
           />
         </FormTextContainer>
         <FormButton type="submit" data-aos="fade-right" data-aos-duration="500">
-          ENVIAR
+        Solicite seu Orçamento
         </FormButton>
       </FormContainer>
     </SecaoFormContainer>

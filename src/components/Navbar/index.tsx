@@ -3,7 +3,7 @@ import {
   NavbarBackground,
   NavbarContainer,
   NavbarMenu,
-  NavbarMenuItem
+  NavbarMenuItem,
 } from "./style";
 import { Logo } from "../Logo";
 import { Button } from "../Button";
@@ -50,7 +50,9 @@ export const Navbar: React.FC<NavbarProps> = ({ readonly = false }) => {
               </NavbarMenuItem>
             </NavbarMenu>
           )}
-          {width > 768 && <Button content="Fale Conosco" onClick={() => {}} />}
+          {width > 768 && (
+            <Button content="Fale Conosco" onClick={() => {}} size="small" />
+          )}
         </NavbarContainer>
       </NavbarBackground>
     </>
