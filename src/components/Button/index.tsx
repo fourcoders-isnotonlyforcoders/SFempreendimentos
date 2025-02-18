@@ -9,21 +9,21 @@ export const Button: React.FC<ButtonProps> = ({
 }) => {
   const sizeStyles: Record<string, sizeStyleType> = {
     small: {
-      padding: "1rem 3rem",
+      padding: "1.2rem 4rem",
       paddingMobile: "0.5rem 1rem",
-      fontSize: "1rem",
+      fontSize: "1.5rem",
       fontSizeMobile: "0.5rem"
     },
     medium: {
-      padding: "1rem 5rem",
+      padding: "1.5rem 7rem",
       paddingMobile: "0.8rem 1.5rem",
-      fontSize: "1.5rem",
+      fontSize: "2rem",
       fontSizeMobile: "1rem"
     },
     large: {
-      padding: "1.5rem 7rem",
+      padding: "2.2rem 15rem",
       paddingMobile: "1rem 2rem",
-      fontSize: "2rem",
+      fontSize: "2.2rem",
       fontSizeMobile: "1.5rem"
     }
   };

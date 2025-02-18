@@ -51,6 +51,8 @@ export const SobreParagraph = styled.p`
   font-weight: 500;
   line-height: 22px;
   padding: 1rem 2rem 1rem 0;
+  border: 1px solid green;
+  text-align: left;
   color: ${(props) => props.theme.colors.secondary};
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   filter: brightness(0.9);
@@ -69,37 +71,6 @@ export const SobreParagraph = styled.p`
 
   @media (max-width: 480px) {
     font-size: 14px;
-  }
-`;
-
-export const SobreButton = styled.button`
-  border: 1px solid grey;
-  border-radius: 25px;
-  height: 65px;
-  width: 65%;
-  text-align: center;
-  color: ${(props) => props.theme.colors.third};
-  font-size: 2.2rem;
-  font-weight: bold;
-  cursor: pointer;
-  margin: 15px auto;
-  transition: all 0.4s ease;
-
-  &:hover {
-    background-color: ${(props) => props.theme.colors.primary};
-    opacity: 0.8;
-    border: none;
-    font-weight: 700;
-  }
-
-  @media (max-width: 1024px) {
-    width: 80%;
-    font-size: 1.8rem;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 1.5rem;
-    width: 100%;
   }
 `;
 

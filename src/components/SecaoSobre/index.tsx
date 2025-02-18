@@ -6,7 +6,7 @@ import {
   SobreImg,
   SobreLeft,
   SobreParagraph,
-  SobreRight
+  SobreRight,
 } from "./styles";
 import { Button } from "../Button";
 export const SecaoSobre: React.FC = () => {
@@ -20,19 +20,19 @@ export const SecaoSobre: React.FC = () => {
           color="white"
         />
         <SobreParagraph data-aos="fade-right" data-aos-duration="500">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim.
+          Na SF Empreendimentos, acreditamos que cada projeto vai além de
+          estruturas de concreto: é a realização de um sonho. Com anos de
+          experiência, nossa equipe é composta por profissionais comprometidos
+          com a qualidade, transparência e confiança, valores que prezamos em
+          cada etapa do processo. Nossa missão é entregar mais do que um imóvel;
+          é criar lares que acolham famílias e permitam que elas construam
+          memórias duradouras. Cada detalhe é cuidadosamente planejado e
+          executado para garantir que o resultado supere suas expectativas.
+          Trabalhamos em estreita colaboração com nossos clientes, entendendo
+          suas necessidades e sonhos, para criar espaços que reflitam sua
+          identidade. Na SF Empreendimentos, transformamos seu sonho em
+          realidade, com a segurança e confiança que você e sua família merecem.
+          Juntos, vamos construir o futuro que você sempre desejou.
         </SobreParagraph>
         <Button
           content="LEIA MAIS"
