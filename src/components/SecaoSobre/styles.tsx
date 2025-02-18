@@ -7,7 +7,7 @@ export const SobreContainer = styled.div`
   min-height: 420px;
   display: flex;
   justify-content: space-around;
-  gap: 10px;
+  gap: 4rem;
   align-items: center;
   padding: 10rem 8rem;
   margin: 0 auto;
@@ -29,9 +29,9 @@ export const SobreContainer = styled.div`
 export const SobreLeft = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  gap: 11px;
+  justify-content: space-around;
+  gap: 2rem;
   width: auto;
   max-width: 50%;
   height: auto;
@@ -49,9 +49,9 @@ export const SobreLeft = styled.div`
 export const SobreParagraph = styled.p`
   font-size: 18px;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 25px;
   padding: 1rem 2rem 1rem 0;
-  border: 1px solid green;
+  margin: 0;
   text-align: left;
   color: ${(props) => props.theme.colors.secondary};
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -73,6 +73,7 @@ export const SobreParagraph = styled.p`
     font-size: 14px;
   }
 `;
+
 
 export const SobreCenter = styled.div`
   width: 3px;

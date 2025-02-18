@@ -29,7 +29,7 @@ export const SecaoInicial: React.FC = () => {
             ad minim.
           </SecaoInicialDescription>
           <Button
-            content="Fale Conosco"
+            content="Fale com um Consultor"
             onClick={() => {}}
             size={width < 1180 ? "large" : "medium"}
           />

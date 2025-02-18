@@ -35,7 +35,7 @@ export const SecaoSobre: React.FC = () => {
           Juntos, vamos construir o futuro que você sempre desejou.
         </SobreParagraph>
         <Button
-          content="LEIA MAIS"
+          content="Faça Parte Dessa História"
           onClick={() => {}}
           size="large"
           data-aos="fade-up-right"
