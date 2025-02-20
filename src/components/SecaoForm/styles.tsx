@@ -146,7 +146,7 @@ export const FormButton = styled.button`
   font-weight: bold;
   color: ${(props) => props.theme.colors.primaryBlue};
   width: 100%;
-  border-radius: 99999px;
+  border-radius: 22px;
   cursor: pointer;
   transition: all 0.3s ease;
   background: radial-gradient(

@@ -69,9 +69,9 @@ export const SecaoServicosItemContent = styled.div`
 export const SecaoServicosItemDescription = styled.p`
   font-size: 2rem;
   font-weight: 300;
-  max-width: 50%;
+  max-width: 60%;
+  padding: .5rem 0;
   color: ${({ theme }) => theme.colors.secondary};
-
   @media only screen and (max-width: 1180px) {
     max-width: 100%;
   }
@@ -80,14 +80,14 @@ export const SecaoServicosItemDescription = styled.p`
 export const SecaoServicosItemLink = styled.a`
   display: flex;
   align-items: center;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   gap: 1rem;
   font-weight: 600;
   cursor: pointer;
   padding-right: 2rem;
   color: ${({ theme }) => theme.colors.primaryBlue};
-  transition: filter 0.4s;
-
+  transition: all 0.4s ease-in-out;
+  opacity: .9;
   &::after {
     content: url("./icons/arrow-right.svg");
     width: 4rem;
@@ -95,5 +95,6 @@ export const SecaoServicosItemLink = styled.a`
 
   &:hover {
     filter: brightness(1.1);
+    opacity: 1;
   }
 `;
