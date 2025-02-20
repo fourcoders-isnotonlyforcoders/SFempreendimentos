@@ -1,12 +1,9 @@
 import { Button } from "../Button";
 import { TituloSecao } from "../TituloSecao";
 import {
-  SecaoPortifolioCard,
-  SecaoPortifolioCardImage,
-  SecaoPortifolioCardsContainer,
   SecaoPortifolioContainer
 } from "./styles";
-
+import { Carrousel } from "../SecaoCarrousel/Carrousel";
 export const SecaoPortifolio = () => {
   return (
     <SecaoPortifolioContainer>
@@ -17,13 +14,7 @@ export const SecaoPortifolio = () => {
         color="white"
         id="portifolio"
       />
-      <SecaoPortifolioCardsContainer>
-        {[...Array(6)].map((_, index) => (
-          <SecaoPortifolioCard key={index}>
-            <SecaoPortifolioCardImage src="./images/house-img.avif" />
-          </SecaoPortifolioCard>
-        ))}
-      </SecaoPortifolioCardsContainer>
+      <Carrousel/>
       <Button content="Inicie Seu Projeto Agora" onClick={() => {}} size="large" />
     </SecaoPortifolioContainer>
   );

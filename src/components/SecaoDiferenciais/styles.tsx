@@ -73,7 +73,7 @@ export const SecaoDiferenciaisCardTitle = styled.h3`
 `;
 
 export const SecaoDiferenciaisCardDescription = styled.p`
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 400;
   color: ${({ theme }) => theme.colors.secondary};
 `;
