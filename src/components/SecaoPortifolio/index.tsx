@@ -15,7 +15,7 @@ export const SecaoPortifolio = () => {
         id="portifolio"
       />
       <Carrousel/>
-      <Button content="Inicie Seu Projeto Agora" onClick={() => {}} size="large" />
+      <Button content="Inicie seu Projeto agora" onClick={() => {}} size="large" />
     </SecaoPortifolioContainer>
   );
 };
