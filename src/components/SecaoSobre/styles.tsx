@@ -4,7 +4,7 @@ export const SobreContainer = styled.div`
   width: 100%;
   max-width: 1350px;
   height: auto;
-  min-height: 420px;
+  min-height: 100vh;
   display: flex;
   justify-content: space-around;
   gap: 4rem;
@@ -30,7 +30,6 @@ export const SobreLeft = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   gap: 2rem;
   width: auto;
   max-width: 50%;
@@ -50,7 +49,7 @@ export const SobreParagraph = styled.p`
   font-size: 18px;
   font-weight: 500;
   line-height: 25px;
-  padding: 1rem 2rem 1rem 0;
+  padding: 1rem;
   margin: 0;
   text-align: left;
   color: ${(props) => props.theme.colors.secondary};
@@ -73,28 +72,6 @@ export const SobreParagraph = styled.p`
     font-size: 14px;
   }
 `;
-
-
-export const SobreCenter = styled.div`
-  width: 3px;
-  height: 400px;
-  background: linear-gradient(
-    to top,
-    transparent 0%,
-    ${(props) => props.theme.colors.primaryBlue} 50%,
-    transparent 100%
-  );
-
-
-  @media (max-width: 1024px) {
-    display: none;
-  }
-
-  @media (max-width: 480px) {
-    display: none;
-  }
-`;
-
 export const SobreRight = styled.div`
   width: auto;
   height: auto;
@@ -114,16 +91,15 @@ export const SobreImg = styled.img`
   height: auto;
   max-height: 470px;
   width: auto;
-  cursor: zoom-in;
-  border-radius: 12px;
+  cursor: inherit;
+  border-radius: 11px;
   transition: transform 0.3s ease;
   transition: box-shadow 0.3s ease, filter 0.3s ease, opacity 0.5s,
     transform 0.5s !important;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 7px 10px 7px rgba(0, 18, 85, 0.11);
 
   &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     filter: brightness(1.1);
   }
 

@@ -10,6 +10,7 @@ import { SecaoInicial } from "../components/SecaoInicial";
 import { SecaoPortifolio } from "../components/SecaoPortifolio";
 import { SecaoServicos } from "../components/SecaoServicos";
 import { SecaoSobre } from "../components/SecaoSobre";
+import { PreFooter } from "../components/PreFooter";
 export const Home: React.FC = () => {
   return (
     <PageContainer>
@@ -23,6 +24,7 @@ export const Home: React.FC = () => {
       <SecaoDepoimentos />
       <SecaoDuvidas />
       <SecaoContato />
+      <PreFooter/>
       <Footer />
     </PageContainer>
   );

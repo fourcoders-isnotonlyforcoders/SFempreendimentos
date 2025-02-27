@@ -1,6 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+@font-face {
+    font-family: 'Clash Grotesk';
+    src: url('/fonts/ClashGrotesk-Variable.ttf') format('truetype');
+    font-weight: 100 900; /* Ajuste para fontes variáveis */
+    font-style: normal;
+}
 html,
 body {
     background: ${(props) => props.theme.colors.black};
@@ -9,6 +15,7 @@ body {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    font-family: 'Clash Grotesk', sans-serif; 
 };
 
 body {
@@ -40,6 +47,4 @@ a {
 button{
     all: unset;
 }
-
-
 `;

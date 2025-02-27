@@ -123,3 +123,8 @@ export const FooterBottomLink = styled(Link)`
     font-size: 0.7rem;
   }
 `;
+
+export const SecondaryLogo = styled.img`
+  width: 77px;
+  height: auto;
+`;

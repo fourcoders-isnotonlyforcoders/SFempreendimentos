@@ -8,12 +8,12 @@ export const ButtonComponent = styled.div<{
 }>`
   background: radial-gradient(
     circle,
-    rgba(0, 123, 231, 0.1),
-    rgba(80, 150, 255, 0.22)
+    rgba(0, 123, 231, 0.11),
+    rgba(80, 150, 255, 0.15)
   );
   color: ${(props) => props.theme.colors.primaryBlue};
   font-size: ${({ padding }) => padding.fontSize};
-  font-weight: 700;
+  font-weight: bold;
   padding: ${({ padding }) => padding.padding};
   border-radius: 5rem;
   cursor: pointer;
@@ -21,12 +21,13 @@ export const ButtonComponent = styled.div<{
   transition: background 0.3s, color 0.3s, border 0.3s, opacity 0.5s,
     transform 0.5s !important;
   border: 2px solid ${(props) => props.theme.colors.primaryBlue};
-  font-weight: bold;
+  font-weight: 700;
   &:hover {
-    background: ${({ theme }) => theme.colors.primaryBlue};
-    color: ${({ theme }) => theme.colors.white};
-    border: ${({ theme, customStyle }) =>
-      `${customStyle.border} ${theme.colors.primary}`};
+    background: #007DE7;
+    font-weight: bold;
+    color: ${({ theme }) => theme.colors.navyBlue};
+    border: 2px solid transparent;
+      box-shadow: 0 0 11px 2px rgba(0, 123, 231, 0.22);
   }
 
   @media only screen and (max-width: 768px) {

@@ -1,7 +1,6 @@
 import React from "react";
 import { TituloSecao } from "../TituloSecao";
 import {
-  SobreCenter,
   SobreContainer,
   SobreImg,
   SobreLeft,
@@ -43,10 +42,9 @@ export const SecaoSobre: React.FC = () => {
           customStyle="outline"
         />
       </SobreLeft>
-      <SobreCenter data-aos="zoom-in" data-aos-duration="500"></SobreCenter>
       <SobreRight>
         <SobreImg
-          src="./images/house-2.avif"
+          src="./images/familyImage.avif"
           data-aos="fade-up-left"
           data-aos-duration="500"
         ></SobreImg>

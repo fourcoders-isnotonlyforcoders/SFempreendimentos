@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const NavbarBackground = styled.div``;
+export const NavbarBackground = styled.div`
+`;
 
 export const NavbarContainer = styled.div`
   display: flex;
@@ -25,9 +26,10 @@ export const NavbarMenu = styled.div`
 `;
 
 export const NavbarMenuItem = styled.a<{ transition: string }>`
-  font-size: 1.5rem;
-  font-weight: 700;
-  filter: brightness(0.7);
+  font-size: 1.6rem;
+  color: #F5F5F5;
+  font-weight: 600;
+  filter: brightness(0.8);
   transition: filter 0.4s, opacity ${({ transition }) => transition},
     transform ${({ transition }) => transition} !important;
 

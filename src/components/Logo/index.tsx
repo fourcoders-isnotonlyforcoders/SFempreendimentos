@@ -3,11 +3,12 @@ import styled from "styled-components";
 export const Logo: React.FC = () => {
   return (
     <Link to={"/"} data-aos="fade-right" data-aos-duration="500">
-      <LogoImg src={"./images/logo-white-blue.png"} />
+      <LogoImg src={"./images/SF.svg"} />
     </Link>
   );
 };
 const LogoImg = styled.img`
-  width: 77px;
+  width: 70px;
   height: auto;
+  object-fit: cover;
 `;

@@ -13,9 +13,8 @@ import {
   FooterContentItemText,
   FooterContentItemTitle,
   FooterIconContato,
-  FooterIconLink
+  FooterIconLink, SecondaryLogo
 } from "./styles";
-import { Logo } from "../Logo";
 
 export const Footer = () => {
   return (
@@ -23,7 +22,7 @@ export const Footer = () => {
       <FooterContent>
         <FooterContentItem>
           <FooterContentItemTitle>
-            <Logo />
+            <SecondaryLogo src="images/SfPrimary.svg"/>
           </FooterContentItemTitle>
           <FooterContentItemText>
             Construtora de alto padrão em RP

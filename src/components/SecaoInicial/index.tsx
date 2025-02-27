@@ -6,7 +6,7 @@ import {
   SecaoInicialContent,
   SecaoInicialDescription,
   SecaoInicialTitle,
-  SecaoInicialTitleStrong
+  SecaoInicialTitleStrong,
 } from "./styles";
 
 export const SecaoInicial: React.FC = () => {
@@ -16,20 +16,23 @@ export const SecaoInicial: React.FC = () => {
       <SecaoInicialContainer>
         <SecaoInicialContent>
           <SecaoInicialTitle data-aos="fade-up-right" data-aos-duration="600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore
-            <SecaoInicialTitleStrong> magna aliqua.</SecaoInicialTitleStrong>
+            Bem-vindo à excelência em construções de alto padrão
+            <SecaoInicialTitleStrong>
+              {" "}
+              SF Empreendimentos
+            </SecaoInicialTitleStrong>
           </SecaoInicialTitle>
           <SecaoInicialDescription
             data-aos="fade-right"
             data-aos-duration="600"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim.
+            Do planejamento à entrega, oferecemos soluções completas em
+            construção, reforma e demolição. Com inovação, qualidade e
+            compromisso, transformamos cada projeto em uma realidade sólida e
+            duradoura.
           </SecaoInicialDescription>
           <Button
-            content="Fale com um Consultor"
+            content="Fale com um consultor"
             onClick={() => {}}
             size={width < 1180 ? "large" : "medium"}
           />

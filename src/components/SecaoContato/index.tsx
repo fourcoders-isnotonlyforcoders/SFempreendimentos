@@ -1,11 +1,11 @@
-import { Button } from "../Button";
 import { TituloSecao } from "../TituloSecao";
 import {
   SecaoContatoBackground,
   SecaoContatoContainer,
   SecaoContatoContent,
   SecaoContatoStrong,
-  SecaoContatoText
+  SecaoContatoText,
+  LastBtn,
 } from "./styles";
 
 export const SecaoContato = () => {
@@ -15,26 +15,25 @@ export const SecaoContato = () => {
         <TituloSecao
           titulo={
             <>
-              Construir com a SF Empreendimentos é garantia de uma obra de
-              <SecaoContatoStrong> alto padrão </SecaoContatoStrong>
-              feita sob medida para você
+              Construímos mais do que projetos, entregamos valor, confiança e a
+              base para um <SecaoContatoStrong>futuro sólido.</SecaoContatoStrong>
             </>
           }
-          preTitulo="CONTATO"
+          preTitulo="PROPÓSITO"
           align="center"
-          color="black200"
+          color="navyBlue"
         />
         <SecaoContatoContent>
           <SecaoContatoText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed do eiusmod tempor incididunt ut labore et
+            Cada obra que realizamos representa um sonho transformado em
+            realidade. Na SF Empreendimentos, construímos com excelência,
+            segurança e compromisso, criando espaços que inspiram e agregam
+            valor para gerações. Do primeiro traço ao projeto final, sua visão
+            se torna nosso compromisso.
           </SecaoContatoText>
         </SecaoContatoContent>
-        <Button content="ENTRAR EM CONTATO" onClick={() => {}} size="large" />
+        <LastBtn>Vamos construir juntos</LastBtn>
       </SecaoContatoContainer>
-
     </SecaoContatoBackground>
   );
 };
