@@ -47,4 +47,8 @@ a {
 button{
     all: unset;
 }
+
+.toastify {
+    font-size: 1.2rem;
+}
 `;

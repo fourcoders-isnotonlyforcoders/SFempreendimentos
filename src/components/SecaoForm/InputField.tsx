@@ -6,12 +6,14 @@ type InputFieldProps = {
   label: string;
   type: "text" | "email" | "tel";
   required?: boolean;
+  name: string;
 };
 
 const InputField: React.FC<InputFieldProps> = ({
   id,
   label,
   type,
+  name,
   required
 }) => {
   return (
@@ -20,6 +22,7 @@ const InputField: React.FC<InputFieldProps> = ({
         required={required}
         type={type}
         id={id}
+        name={name}
         placeholder=" "
         data-aos="fade-left"
         data-aos-duration="500"
