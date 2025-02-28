@@ -12,7 +12,7 @@ export const SobreContainer = styled.div`
   padding: 10rem 8rem;
   margin: 0 auto;
   @media (max-width: 1024px) {
-    padding: 0 3rem;
+    padding: 0 2rem;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -23,6 +23,7 @@ export const SobreContainer = styled.div`
 
   @media (max-width: 480px) {
     padding: 0 1rem;
+    height: auto;
   }
 `;
 
@@ -38,18 +39,20 @@ export const SobreLeft = styled.div`
 
   @media (max-width: 1024px) {
     max-width: 100%;
+    padding: 1rem;
   }
 
   @media (max-width: 480px) {
     min-height: 400px;
+    padding: 0.5rem;
   }
 `;
 
 export const SobreParagraph = styled.p`
-  font-size: 18px;
+  font-size: 2rem;
   font-weight: 500;
   line-height: 25px;
-  padding: 1rem;
+  padding: 1rem 0;
   margin: 0;
   text-align: left;
   color: ${(props) => props.theme.colors.secondary};
@@ -64,12 +67,11 @@ export const SobreParagraph = styled.p`
   }
 
   @media (max-width: 1024px) {
-    font-size: 16px;
-    padding: 1rem;
+    font-size: 1.9rem;
   }
 
   @media (max-width: 480px) {
-    font-size: 14px;
+    font-size: 1.8rem;
   }
 `;
 export const SobreRight = styled.div`
@@ -83,7 +85,8 @@ export const SobreRight = styled.div`
   }
 
   @media (max-width: 480px) {
-    margin-top: 20px;
+    min-width: 80%;
+    object-fit: cover;
   }
 `;
 
@@ -104,12 +107,11 @@ export const SobreImg = styled.img`
   }
 
   @media (max-width: 1024px) {
-    margin-top: 2rem;
     max-height: 400px;
   }
 
   @media (max-width: 480px) {
-    max-height: 300px;
+    max-height: 350px;
     width: 100%;
   }
 `;

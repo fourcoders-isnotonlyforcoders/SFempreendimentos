@@ -6,43 +6,68 @@ export const SecaoFormContainer = styled.section`
   display: flex;
   flex-direction: column;
   margin: 2rem auto;
+  @media (max-width: 1024px) {
+    padding: 5rem 1rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 5rem 1rem;
+    height: auto;
+  }
   
 `;
 
 export const FormContainer = styled.form`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 2.2rem;
   padding: 1rem 4rem 8rem 4rem;
-  width: auto;
+  width: 100%; 
   max-width: 70%;
   margin: 2rem auto;
   border: 2px solid ${(props) => props.theme.colors.secondaryBlue};
   border-radius: 22px;
+
+  @media (max-width: 1024px) {
+    max-width: 90%; 
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    padding: 1rem 2rem 4rem 2rem;
+  }
 `;
 
 export const FormNameContainer = styled.div`
   position: relative;
-  width: auto;
-  min-width: 300px;
-  margin: 4rem 0 0 0;
-  flex: 1 1 100%;
+  width: 100%; 
+  margin-top: 4rem;
+  text-align: center; 
+
+  @media (max-width: 906px) {
+    max-width: 100%;
+  }
 `;
 
 export const FormInfosContainer = styled.div`
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: center; 
+  align-items: center;
+  gap: 1rem;
   width: 100%;
   margin-top: 20px;
 
-  @media only screen and (max-width: 1180px) {
+  @media (max-width: 1180px) {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 `;
+
+
 
 export const NameInput = styled.input`
   font-size: 1.8rem;
@@ -75,6 +100,9 @@ export const NameInput = styled.input`
   &:focus ~ .bar:before,
   &:focus ~ .bar:after {
     width: 50%;
+  }
+  @media (max-width: 1024px) {
+    max-width: 100%;
   }
 `;
 
