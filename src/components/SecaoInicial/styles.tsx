@@ -22,6 +22,16 @@ export const SecaoinicialBackground = styled.div`
     background-size: cover; 
     height: 85vh;
   }
+  @media only screen and (max-width: 768px) {
+    background: linear-gradient(
+        to top,
+        ${({ theme }) => theme.colors.black} 33%,
+        transparent 80%
+      ),
+      url("./images/FirstImageMobile.avif") no-repeat center center;
+    background-size: cover;
+    height: auto;
+  }
 `;
 
 export const SecaoInicialContainer = styled.div`
@@ -32,9 +42,16 @@ export const SecaoInicialContainer = styled.div`
   height: 100%;
   @media only screen and (max-width: 1180px) {
     padding-bottom: 0;
+    height: auto;
+    min-height: 50%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    padding: 0 1rem; 
+    height: auto;
+    min-height: 70%;
   }
 `;
-//TODO: colocar imagem certa depois 
 
 export const SecaoInicialContent = styled.div`
   display: flex;
@@ -48,7 +65,12 @@ export const SecaoInicialContent = styled.div`
   @media only screen and (max-width: 1180px) {
     width: 100%;
     align-items: center;
-    gap: 6rem;
+    gap: 3rem;
+  }
+  @media only screen and (max-width: 480px) {
+    padding: 11rem 1rem 0 1rem; 
+    height: auto;
+    gap: 2rem;
   }
 `;
 
@@ -60,7 +82,10 @@ export const SecaoInicialTitle = styled.h1`
   color: ${({ theme }) => theme.colors.white};
 
   @media only screen and (max-width: 1180px) {
-    font-size: 2rem;
+    font-size: 3rem;
+  }
+  @media only screen and (max-width: 480px) {
+    font-size: 2.8rem;
   }
 `;
 
@@ -70,7 +95,10 @@ export const SecaoInicialTitleStrong = styled.strong`
   color: ${({ theme }) => theme.colors.primaryBlue};
 
   @media only screen and (max-width: 1180px) {
-    font-size: 2rem;
+    font-size: 3rem;
+  }
+  @media only screen and (max-width: 480px) {
+    font-size: 2.8rem;
   }
 `;
 
@@ -81,6 +109,9 @@ export const SecaoInicialDescription = styled.p`
   color: ${({ theme }) => theme.colors.secondary};
   margin-bottom: 1rem;
   @media only screen and (max-width: 1180px) {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
+  }
+  @media only screen and (max-width: 480px) {
+    font-size: 1.7rem;
   }
 `;

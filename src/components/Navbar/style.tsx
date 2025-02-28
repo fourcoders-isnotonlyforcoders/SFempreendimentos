@@ -52,6 +52,7 @@ export const NavbarMenuItem = styled.a<{ transition: string }>`
   }
 
   @media (max-width: 1180px) {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
   }
 `;
