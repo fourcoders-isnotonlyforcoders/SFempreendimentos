@@ -19,6 +19,9 @@ export const SecaoDiferenciaisContainer = styled.div`
   max-width: 1350px;
   margin: 0 auto;
   padding: 10rem 8rem 20rem;
+  @media (max-width: 1180px) {
+    padding: 7rem 4rem 10rem;
+  }
 `;
 
 export const SecaoDiferenciaisCardsContainer = styled.div`
@@ -26,6 +29,10 @@ export const SecaoDiferenciaisCardsContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  @media (max-width: 1180px) {
+    flex-direction: column
+    ;
+  }
 `;
 
 export const SecaoDiferenciaisCard = styled.div`
@@ -46,11 +53,16 @@ export const SecaoDiferenciaisCard = styled.div`
   &:hover {
     scale: 1.05;
   }
+  @media (max-width: 1180px) {
+    width: 85%;
+    padding: 2rem 1.8rem;
+  }
 `;
 
 export const SecaoDiferenciaisCardIcon = styled.img`
   width: 3.3rem;
   height: 3.3rem;
+
 `;
 
 export const SecaoDiferenciaisCardTitle = styled.h3`
@@ -70,10 +82,16 @@ export const SecaoDiferenciaisCardTitle = styled.h3`
       transparent 100%
     );
   }
+  @media (max-width: 1180px) {
+    font-size: 2.4rem;
+  }
 `;
 
 export const SecaoDiferenciaisCardDescription = styled.p`
   font-size: 1.8rem;
   font-weight: 400;
   color: ${({ theme }) => theme.colors.secondary};
+  @media (max-width: 1180px) {
+    font-size: 2rem;
+  }
 `;
