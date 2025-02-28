@@ -5,9 +5,10 @@ import {
   SobreImg,
   SobreLeft,
   SobreParagraph,
-  SobreRight,
+  SobreRight
 } from "./styles";
 import { Button } from "../Button";
+import { WPLINK } from "../../constants/social";
 export const SecaoSobre: React.FC = () => {
   return (
     <SobreContainer>
@@ -35,7 +36,7 @@ export const SecaoSobre: React.FC = () => {
         </SobreParagraph>
         <Button
           content="Faça parte dessa história"
-          onClick={() => {}}
+          onClick={() => window.open(WPLINK)}
           size="large"
           data-aos="fade-up-right"
           data-aos-duration="500"

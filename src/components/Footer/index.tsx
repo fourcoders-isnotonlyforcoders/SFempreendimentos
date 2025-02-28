@@ -1,3 +1,4 @@
+import { EMAIL, IGLINK, WPLINK } from "../../constants/social";
 import {
   FooterBottom,
   FooterBottomCenter,
@@ -13,7 +14,8 @@ import {
   FooterContentItemText,
   FooterContentItemTitle,
   FooterIconContato,
-  FooterIconLink, SecondaryLogo
+  FooterIconLink,
+  SecondaryLogo
 } from "./styles";
 
 export const Footer = () => {
@@ -22,7 +24,7 @@ export const Footer = () => {
       <FooterContent>
         <FooterContentItem>
           <FooterContentItemTitle>
-            <SecondaryLogo src="images/SfPrimary.svg"/>
+            <SecondaryLogo src="images/SfPrimary.svg" />
           </FooterContentItemTitle>
           <FooterContentItemText>
             Construtora de alto padrão em RP
@@ -31,7 +33,7 @@ export const Footer = () => {
         <FooterContentItem>
           <FooterContentItemTitle>Redes Sociais</FooterContentItemTitle>
           <FooterContentItemContent>
-            <FooterIconLink href="">
+            <FooterIconLink href={IGLINK} target="_blank">
               <FooterBottomIconRedeSocial src={"./icons/instagram.svg"} />
             </FooterIconLink>
           </FooterContentItemContent>
@@ -39,13 +41,13 @@ export const Footer = () => {
         <FooterContentItem>
           <FooterContentItemTitle>Contato</FooterContentItemTitle>
           <FooterContentItemContent>
-            <FooterContatoLink>
+            <FooterContatoLink href={WPLINK} target="_blank">
               <FooterContato>
                 <FooterIconContato src={"./icons/whatsapp.svg"} />
                 <FooterContentItemText>(11) 99999-9999</FooterContentItemText>
               </FooterContato>
             </FooterContatoLink>
-            <FooterContatoLink>
+            <FooterContatoLink href={`mailto:${EMAIL}`} target="_blank">
               <FooterContato>
                 <FooterIconContato src={"./icons/email.svg"} />
                 <FooterContentItemText>contato@sf.com.br</FooterContentItemText>

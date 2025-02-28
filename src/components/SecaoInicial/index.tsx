@@ -1,4 +1,5 @@
 import { useWindowDimensions } from "../../../utils/useWindowDimensions";
+import { WPLINK } from "../../constants/social";
 import { Button } from "../Button";
 import {
   SecaoinicialBackground,
@@ -6,7 +7,7 @@ import {
   SecaoInicialContent,
   SecaoInicialDescription,
   SecaoInicialTitle,
-  SecaoInicialTitleStrong,
+  SecaoInicialTitleStrong
 } from "./styles";
 
 export const SecaoInicial: React.FC = () => {
@@ -33,7 +34,7 @@ export const SecaoInicial: React.FC = () => {
           </SecaoInicialDescription>
           <Button
             content="Fale com um consultor"
-            onClick={() => {}}
+            onClick={() => window.open(WPLINK)}
             size={width < 1180 ? "large" : "medium"}
           />
         </SecaoInicialContent>

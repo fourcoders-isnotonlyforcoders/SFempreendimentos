@@ -1,9 +1,8 @@
 import { Button } from "../Button";
 import { TituloSecao } from "../TituloSecao";
-import {
-  SecaoPortifolioContainer
-} from "./styles";
+import { SecaoPortifolioContainer } from "./styles";
 import { Carrousel } from "../SecaoCarrousel/Carrousel";
+import { WPLINK } from "../../constants/social";
 export const SecaoPortifolio = () => {
   return (
     <SecaoPortifolioContainer>
@@ -14,8 +13,12 @@ export const SecaoPortifolio = () => {
         color="white"
         id="portifolio"
       />
-      <Carrousel/>
-      <Button content="Inicie seu Projeto agora" onClick={() => {}} size="large" />
+      <Carrousel />
+      <Button
+        content="Inicie seu Projeto agora"
+        onClick={() => window.open(WPLINK)}
+        size="large"
+      />
     </SecaoPortifolioContainer>
   );
 };

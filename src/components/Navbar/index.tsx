@@ -3,12 +3,13 @@ import {
   NavbarBackground,
   NavbarContainer,
   NavbarMenu,
-  NavbarMenuItem,
+  NavbarMenuItem
 } from "./style";
 import { Logo } from "../Logo";
 import { Button } from "../Button";
 import { useWindowDimensions } from "../../../utils/useWindowDimensions";
 import { NavbarProps } from "./types";
+import { WPLINK } from "../../constants/social";
 
 export const Navbar: React.FC<NavbarProps> = ({ readonly = false }) => {
   const { width } = useWindowDimensions();
@@ -51,7 +52,11 @@ export const Navbar: React.FC<NavbarProps> = ({ readonly = false }) => {
             </NavbarMenu>
           )}
           {width > 768 && (
-            <Button content="Fale Conosco" onClick={() => {}} size="small" />
+            <Button
+              content="Fale Conosco"
+              onClick={() => window.open(WPLINK)}
+              size="small"
+            />
           )}
         </NavbarContainer>
       </NavbarBackground>

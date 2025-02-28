@@ -1,3 +1,4 @@
+import { WPLINK } from "../../constants/social";
 import { TituloSecao } from "../TituloSecao";
 import {
   SecaoContatoBackground,
@@ -5,7 +6,7 @@ import {
   SecaoContatoContent,
   SecaoContatoStrong,
   SecaoContatoText,
-  LastBtn,
+  LastBtn
 } from "./styles";
 
 export const SecaoContato = () => {
@@ -16,7 +17,8 @@ export const SecaoContato = () => {
           titulo={
             <>
               Construímos mais do que projetos, entregamos valor, confiança e a
-              base para um <SecaoContatoStrong>futuro sólido.</SecaoContatoStrong>
+              base para um{" "}
+              <SecaoContatoStrong>futuro sólido.</SecaoContatoStrong>
             </>
           }
           preTitulo="PROPÓSITO"
@@ -32,7 +34,9 @@ export const SecaoContato = () => {
             se torna nosso compromisso.
           </SecaoContatoText>
         </SecaoContatoContent>
-        <LastBtn>Vamos construir juntos</LastBtn>
+        <LastBtn onClick={() => window.open(WPLINK)}>
+          Vamos construir juntos
+        </LastBtn>
       </SecaoContatoContainer>
     </SecaoContatoBackground>
   );
