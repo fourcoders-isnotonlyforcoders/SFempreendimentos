@@ -44,7 +44,7 @@ export const Footer = () => {
             <FooterContatoLink href={WPLINK} target="_blank">
               <FooterContato>
                 <FooterIconContato src={"./icons/whatsapp.svg"} />
-                <FooterContentItemText>(11) 99999-9999</FooterContentItemText>
+                <FooterContentItemText>(11) 99327-1760</FooterContentItemText>
               </FooterContato>
             </FooterContatoLink>
             <FooterContatoLink href={`mailto:${EMAIL}`} target="_blank">
