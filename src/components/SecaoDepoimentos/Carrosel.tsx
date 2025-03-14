@@ -19,6 +19,7 @@ import {
   CarrouselNavigationButton,
 } from "./styles";
 import { useWindowDimensions } from "../../../utils/useWindowDimensions";
+import { DEPOIMENTOS } from "../../constants/depoimentos";
 
 export const Carrousel: React.FC = () => {
   const { width } = useWindowDimensions();
@@ -58,35 +59,32 @@ export const Carrousel: React.FC = () => {
           data-aos-duration="500"
         />
         <CarrouselCardContainer ref={sliderRef} className="keen-slider">
-          {[...Array(5)].map(() => {
-            return (
-              <CarrouselCard className="keen-slider__slide">
-                <CarrouselCardAvaliation>
-                  <CarrouselCardStars>
-                    {[...Array(5)].map(() => (
-                      <CarrouselCardStar src="./icons/star.svg" />
-                    ))}
-                  </CarrouselCardStars>
-                  <CarrouselCardAvaliationText>
-                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Sed do eiusmod tempor incididunt dolore magna aliqua. Ut
-                    enim ad minim.”
-                  </CarrouselCardAvaliationText>
-                </CarrouselCardAvaliation>
-                <CarrouselCardAuthor>
-                  <CarrouselCardAuthorImage src="./icons/user-circle.svg" />
-                  <CarrouselCardAuthorInfo>
-                    <CarrouselCardAuthorInfoText>
-                      Victor Hugo.
-                    </CarrouselCardAuthorInfoText>
-                    <CarrouselCardAuthorInfoText>
-                      São Paulo - SP
-                    </CarrouselCardAuthorInfoText>
-                  </CarrouselCardAuthorInfo>
-                </CarrouselCardAuthor>
-              </CarrouselCard>
-            );
-          })}
+          {DEPOIMENTOS.map(({description, image, locale, name, stars}, index) => (
+              <CarrouselCard className="keen-slider__slide" key={index}>
+              <CarrouselCardAvaliation>
+                <CarrouselCardStars>
+                  {[...Array(stars)].map(() => (
+                    <CarrouselCardStar src="./icons/star.svg" />
+                  ))}
+                </CarrouselCardStars>
+                <CarrouselCardAvaliationText>
+                  “{description}”
+                </CarrouselCardAvaliationText>
+              </CarrouselCardAvaliation>
+              <CarrouselCardAuthor>
+                <CarrouselCardAuthorImage src={image} />
+                <CarrouselCardAuthorInfo>
+                  <CarrouselCardAuthorInfoText>
+                    {name}
+                  </CarrouselCardAuthorInfoText>
+                  <CarrouselCardAuthorInfoText>
+                    {locale}
+                  </CarrouselCardAuthorInfoText>
+                </CarrouselCardAuthorInfo>
+              </CarrouselCardAuthor>
+            </CarrouselCard>
+            )
+          )}
         </CarrouselCardContainer>
         <CarrouselButton
           src={"./icons/simple-arrow-right.svg"}

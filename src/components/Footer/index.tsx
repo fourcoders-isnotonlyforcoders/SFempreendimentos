@@ -1,4 +1,4 @@
-import { EMAIL, IGLINK, WPLINK } from "../../constants/social";
+import { EMAIL, FBLINK, IGLINK, WPLINK } from "../../constants/social";
 import {
   FooterBottom,
   FooterBottomCenter,
@@ -36,6 +36,9 @@ export const Footer = () => {
             <FooterIconLink href={IGLINK} target="_blank">
               <FooterBottomIconRedeSocial src={"./icons/instagram.svg"} />
             </FooterIconLink>
+            <FooterIconLink href={FBLINK} target="_blank">
+              <FooterBottomIconRedeSocial src={"./icons/facebook.svg"} />
+            </FooterIconLink>
           </FooterContentItemContent>
         </FooterContentItem>
         <FooterContentItem>
@@ -50,7 +53,7 @@ export const Footer = () => {
             <FooterContatoLink href={`mailto:${EMAIL}`} target="_blank">
               <FooterContato>
                 <FooterIconContato src={"./icons/email.svg"} />
-                <FooterContentItemText>contato@sf.com.br</FooterContentItemText>
+                <FooterContentItemText>{EMAIL}</FooterContentItemText>
               </FooterContato>
             </FooterContatoLink>
           </FooterContentItemContent>
@@ -58,7 +61,7 @@ export const Footer = () => {
         <FooterContentItem>
           <FooterContentItemTitle>Endereço</FooterContentItemTitle>
           <FooterContentItemText>
-            Rua das Flores, 123 - Centro - SP/SP
+            Centro - Ribeirão Pires - SP
           </FooterContentItemText>
         </FooterContentItem>
       </FooterContent>

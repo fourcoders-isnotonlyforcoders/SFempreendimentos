@@ -76,6 +76,7 @@ export const CarrouselCardAvaliation = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
+  height: 100%;
 `;
 
 export const CarrouselCardStars = styled.div`
