@@ -12,25 +12,31 @@ export const SecaoinicialBackground = styled.div`
   background-attachment: fixed; 
   height: 90vh;
 
+
   @media only screen and (max-width: 1180px) {
     background: linear-gradient(
         to top,
-        ${({ theme }) => theme.colors.black} 60%,
-        transparent 100%
-      ),
-      url("./images/bgSf.avif") no-repeat center center;
-    background-size: cover; 
-    height: 85vh;
-  }
-  @media only screen and (max-width: 768px) {
-    background: linear-gradient(
-        to top,
-        ${({ theme }) => theme.colors.black} 33%,
+        ${({ theme }) => theme.colors.black} 37%,
         transparent 80%
       ),
-      url("./images/FirstImageMobile.avif") no-repeat center center;
+      url("./images/FirstImageMobile.avif") no-repeat ;
     background-size: cover;
+    background-position: center;
     height: auto;
+    width: auto;
+  }
+  @media only screen and (max-width: 490px) {
+    background: linear-gradient(
+        to top,
+        ${({ theme }) => theme.colors.black} 37%,
+        transparent 80%
+      ),
+      url("./images/FirstImageMobile.avif") no-repeat ;
+    background-size: contain;
+    background-position: center;
+    height: 60vh;
+    width: auto;
+    margin-bottom: 8rem;
   }
 `;
 
@@ -44,10 +50,13 @@ export const SecaoInicialContainer = styled.div`
     padding-bottom: 0;
     height: auto;
     min-height: 50%;
+    padding: 5rem 1rem ; 
+    margin-top: 33rem;
   }
 
   @media only screen and (max-width: 480px) {
-    padding: 0 1rem; 
+    padding: 5rem 1rem ; 
+    margin-top: 17rem;
     height: auto;
     min-height: 70%;
   }

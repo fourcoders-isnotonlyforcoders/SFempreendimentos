@@ -16,7 +16,7 @@ import {
   CarrouselContainer,
   CarrouselContentContainer,
   CarrouselNavigation,
-  CarrouselNavigationButton
+  CarrouselNavigationButton,
 } from "./styles";
 import { useWindowDimensions } from "../../../utils/useWindowDimensions";
 
@@ -27,7 +27,7 @@ export const Carrousel: React.FC = () => {
   const [sliderRef, instanceRef] = useKeenSlider({
     slides: {
       perView: width > 1180 ? 3 : 1,
-      spacing: 30
+      spacing: 30,
     },
     loop: true,
     initial: 0,
@@ -36,7 +36,7 @@ export const Carrousel: React.FC = () => {
     },
     created() {
       setRendered(true);
-    }
+    },
   });
 
   const handleMove = (event: React.MouseEvent, direction: "prev" | "next") => {
@@ -98,7 +98,7 @@ export const Carrousel: React.FC = () => {
       {rendered && instanceRef.current && (
         <CarrouselNavigation>
           {[
-            ...Array(instanceRef.current.track.details.slides.length).keys()
+            ...Array(instanceRef.current.track.details.slides.length).keys(),
           ].map((idx) => {
             return (
               <CarrouselNavigationButton

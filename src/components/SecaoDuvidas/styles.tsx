@@ -13,11 +13,19 @@ export const SecaoDuvidasContainer = styled.div`
   gap: 4rem;
   margin: 0 auto;
   padding: 10rem 8rem;
+  @media (max-width: 1024px) {
+    padding: 2rem 1rem 4rem 2rem;
+    border: none;
+  }
 `;
 
 export const AccordionContainer = styled.div`
   display: flex;
   justify-content: center;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const AccordionTitleContainer = styled.div`
@@ -26,11 +34,21 @@ export const AccordionTitleContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 1024px) {
+    height: auto;
+    padding: 4rem 0;
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 export const AccordionTitle = styled.h3`
   font-size: 4rem;
   color: ${({ theme }) => theme.colors.black};
+  @media (max-width: 1024px) {
+font-size: 3rem;
+  }
+  
 `;
 
 export const AccordionContentContainer = styled.div`
@@ -41,6 +59,9 @@ export const AccordionContentContainer = styled.div`
   gap: 2rem;
   align-items: center;
   justify-content: center;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const AccordionCard = styled.div`
@@ -62,7 +83,7 @@ export const AccordionCard = styled.div`
 `;
 
 export const AccordionCardTitle = styled.h5`
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 400;
 `;
 
@@ -90,7 +111,7 @@ export const AccordionCardPreviewContainer = styled.div`
 export const AccordionCardContent = styled.div<{ active: boolean }>`
   opacity: ${({ active }) => (active ? "1" : "0")};
   height: ${({ active }) => (active ? "auto" : "0")};
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 400;
 
   padding: 0 3rem ${({ active }) => (active ? "3rem" : 0)};

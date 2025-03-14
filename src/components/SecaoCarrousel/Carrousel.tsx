@@ -16,6 +16,11 @@ export const Carrousel: React.FC = () => {
     renderMode: "performance",
     drag: true,
     slides: { perView: 3, spacing: 20 },
+    breakpoints: {
+      "(max-width: 768px)": {
+        slides: { perView: 1, spacing: 20 },
+      },
+    },
     created(s) {
       s.moveToIdx(numberOfCards - 1, true, animation);
     },
