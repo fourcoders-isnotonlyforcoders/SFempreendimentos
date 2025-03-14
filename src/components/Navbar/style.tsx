@@ -16,6 +16,12 @@ export const NavbarContainer = styled.div`
     align-items: center;
     gap: 2rem;
   }
+  @media (max-width: 490px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: -4rem;
+  }
 `;
 
 export const NavbarMenu = styled.div`
