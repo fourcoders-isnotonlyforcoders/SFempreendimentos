@@ -36,7 +36,7 @@ export const SecaoinicialBackground = styled.div`
     background-position: center;
     height: 60vh;
     width: auto;
-    margin-bottom: 8rem;
+    margin-bottom: 12rem;
   }
 `;
 

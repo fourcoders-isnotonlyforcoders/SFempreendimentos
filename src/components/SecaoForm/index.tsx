@@ -44,6 +44,7 @@ export const SecaoForm: React.FC = () => {
         preTitulo="CONTATO"
         align="center"
         color="white"
+        id="contato"
       />
       <FormContainer onSubmit={handleSubmit}>
         <FormNameContainer>

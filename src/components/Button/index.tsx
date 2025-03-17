@@ -22,9 +22,9 @@ export const Button: React.FC<ButtonProps> = ({
     },
     large: {
       padding: "2.2rem 12rem",
-      paddingMobile: "1rem 2rem",
+      paddingMobile: "1.5rem 2.5rem",
       fontSize: "2.4rem",
-      fontSizeMobile: "1.5rem"
+      fontSizeMobile: "2rem"
     }
   };
   const styleStyles: Record<string, styleType> = {
