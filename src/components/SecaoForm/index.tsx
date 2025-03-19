@@ -9,7 +9,10 @@ import {
   FormButton,
   PrimarySelect,
   SelectsContainer,
-  Option
+  Option,
+  SecaoContainer,
+  SecaoLadoForm,
+  FormImage
 } from "./styles";
 import InputField from "./InputField";
 import emailjs from "@emailjs/browser";
@@ -46,60 +49,69 @@ export const SecaoForm: React.FC = () => {
         color="white"
         id="contato"
       />
-      <FormContainer onSubmit={handleSubmit}>
-        <FormNameContainer>
-          <InputField
-            id="nome"
-            label="Nome Completo"
-            type="text"
-            name="nome"
-            required
-          />
-        </FormNameContainer>
-        <FormInfosContainer>
-          <InputField
-            id="email"
-            label="Email"
-            type="email"
-            name="email"
-            required
-          />
-          <InputField
-            id="telefone"
-            label="Telefone"
-            type="tel"
-            name="telefone"
-            required
-          />
-        </FormInfosContainer>
-        <SelectsContainer>
-          <PrimarySelect id="servico" name="servico" defaultValue="1">
-            <Option value="Serviço não selecionado" disabled>
-              Serviço Desejado
-            </Option>{" "}
-            {/* Desabilita o primeiro valor */}
-            <Option value="Projetos Personalizados">
-              Projetos Personalizados
-            </Option>
-            <Option value="Reformas e Ampliações">Reformas e Ampliações</Option>
-            <Option value="Construção">Construção</Option>
-            <Option value="Manutenções">Manutenções</Option>
-            <Option value="Demolição">Demolição</Option>
-          </PrimarySelect>
-        </SelectsContainer>
+      <SecaoContainer>
+        <SecaoLadoForm>
+        <FormImage
+          src="./images/familyImage.avif"
+          data-aos="fade-up-left"
+          data-aos-duration="500"
+        ></FormImage>
+        </SecaoLadoForm>
+        <FormContainer onSubmit={handleSubmit}>
+          <FormNameContainer>
+            <InputField
+              id="nome"
+              label="Nome Completo"
+              type="text"
+              name="nome"
+              required
+            />
+          </FormNameContainer>
+          <FormInfosContainer>
+            <InputField
+              id="email"
+              label="Email"
+              type="email"
+              name="email"
+              required
+            />
+            <InputField
+              id="telefone"
+              label="Telefone"
+              type="tel"
+              name="telefone"
+              required
+            />
+          </FormInfosContainer>
+          <SelectsContainer>
+            <PrimarySelect id="servico" name="servico" defaultValue="1">
+              <Option value="Serviço não selecionado" disabled>
+                Serviço Desejado
+              </Option>{" "}
+              {/* Desabilita o primeiro valor */}
+              <Option value="Projetos Personalizados">
+                Projetos Personalizados
+              </Option>
+              <Option value="Reformas e Ampliações">Reformas e Ampliações</Option>
+              <Option value="Construção">Construção</Option>
+              <Option value="Manutenções">Manutenções</Option>
+              <Option value="Demolição">Demolição</Option>
+            </PrimarySelect>
+          </SelectsContainer>
 
-        <FormTextContainer data-aos="fade-up-left" data-aos-duration="500">
-          <textarea
-            id="additionalInfo"
-            placeholder="Descreva brevemente sobre seu projeto:"
-            name="descricao"
-            rows={11}
-          />
-        </FormTextContainer>
-        <FormButton type="submit" data-aos="fade-right" data-aos-duration="500">
-          Solicite seu Orçamento
-        </FormButton>
-      </FormContainer>
+          <FormTextContainer data-aos="fade-up-left" data-aos-duration="500">
+            <textarea
+              id="additionalInfo"
+              placeholder="Descreva brevemente sobre seu projeto:"
+              name="descricao"
+              rows={11}
+            />
+          </FormTextContainer>
+          <FormButton type="submit" data-aos="fade-right" data-aos-duration="500">
+            Solicite seu Orçamento
+          </FormButton>
+        </FormContainer>
+      </SecaoContainer>
     </SecaoFormContainer>
   );
 };

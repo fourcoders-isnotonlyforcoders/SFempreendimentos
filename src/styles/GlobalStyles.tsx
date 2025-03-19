@@ -10,12 +10,12 @@ export const GlobalStyles = createGlobalStyle`
 html,
 body {
     background: ${(props) => props.theme.colors.black};
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 10px;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
-    font-family: 'Clash Grotesk', sans-serif; 
+    // font-family: 'Clash Grotesk', sans-serif; 
 };
 
 body {
