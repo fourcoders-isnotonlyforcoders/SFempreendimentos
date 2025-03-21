@@ -6,28 +6,29 @@ export const ButtonComponent = styled.div<{
   padding: sizeStyleType;
   customStyle: styleType;
 }>`
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle,
     rgba(0, 123, 231, 0.11),
     rgba(80, 150, 255, 0.15)
-  );
-  color: ${(props) => props.theme.colors.primaryBlue};
+  ); */
+  background: #007DE7;
+  color: ${(props) => props.theme.colors.black};
   font-size: ${({ padding }) => padding.fontSize};
   font-weight: bold;
   padding: ${({ padding }) => padding.padding};
   border-radius: 5rem;
   cursor: pointer;
   width: fit-content;
-  transition: background 0.3s, color 0.3s, border 0.3s, opacity 0.5s,
-    transform 0.5s !important;
+  transition: all .4s ease-in-out !important;
   border: 2px solid ${(props) => props.theme.colors.primaryBlue};
   font-weight: 700;
   &:hover {
-    background: #007DE7;
+    transform: scale(1.02) !important;
+    opacity: .8;
     font-weight: bold;
     color: ${({ theme }) => theme.colors.navyBlue};
     border: 2px solid transparent;
-      box-shadow: 0 0 11px 2px rgba(0, 123, 231, 0.22);
+      box-shadow: 0 0 11px 2px rgba(0, 123, 231, 0.11);
   }
 
   @media only screen and (max-width: 768px) {

@@ -89,8 +89,8 @@ export const NameInput = styled.input`
 
   &:focus {
     outline: none;
-    border-bottom: 2px solid ${(props) => props.theme.colors.secondaryBlue};
-    color: ${(props) => props.theme.colors.secondaryBlue};
+    border-bottom: 2px solid ${(props) => props.theme.colors.primaryBlue};
+    color: ${(props) => props.theme.colors.primaryBlue};
   }
 
   &:focus ~ label,
@@ -98,7 +98,7 @@ export const NameInput = styled.input`
   &:valid ~ label {
     top: -22px;
     font-size: 1.6rem;
-    color: ${(props) => props.theme.colors.secondaryBlue};
+    color: ${(props) => props.theme.colors.primaryBlue};
   }
 
   &:not(&:focus) ~ label {
@@ -174,11 +174,11 @@ export const FormTextContainer = styled.div`
 
   textarea:focus {
     border: 2px solid ${(props) => props.theme.colors.secondaryBlue};
-    color: ${(props) => props.theme.colors.secondaryBlue};
+    color: ${(props) => props.theme.colors.primaryBlue};
   }
 
   textarea:focus::placeholder {
-    color: ${(props) => props.theme.colors.secondaryBlue};
+    color: ${(props) => props.theme.colors.primaryBlue};
   }
 `;
 

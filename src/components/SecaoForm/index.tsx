@@ -11,7 +11,7 @@ import {
   SelectsContainer,
   Option,
   SecaoContainer,
-  FormImage
+  FormImage,
 } from "./styles";
 import InputField from "./InputField";
 import emailjs from "@emailjs/browser";
@@ -26,7 +26,7 @@ export const SecaoForm: React.FC = () => {
     event.preventDefault();
     emailjs
       .sendForm(serviceId, templateId, event.currentTarget, {
-        publicKey: publicKey
+        publicKey: publicKey,
       })
       .then(
         () => {
@@ -53,13 +53,12 @@ export const SecaoForm: React.FC = () => {
           src="./images/FormImage.avif"
           data-aos="fade-right"
           data-aos-duration="500"
-        >
-        </FormImage>
-        <FormContainer 
-          onSubmit={handleSubmit}  
+        ></FormImage>
+        <FormContainer
+          onSubmit={handleSubmit}
           data-aos="fade-left"
           data-aos-duration="500"
-          >
+        >
           <FormNameContainer>
             <InputField
               id="nome"
@@ -89,12 +88,13 @@ export const SecaoForm: React.FC = () => {
             <PrimarySelect id="servico" name="servico" defaultValue="1">
               <Option value="Serviço não selecionado" disabled>
                 Serviço Desejado
-              </Option>{" "}
-              {/* Desabilita o primeiro valor */}
+              </Option>
               <Option value="Projetos Personalizados">
                 Projetos Personalizados
               </Option>
-              <Option value="Reformas e Ampliações">Reformas e Ampliações</Option>
+              <Option value="Reformas e Ampliações">
+                Reformas e Ampliações
+              </Option>
               <Option value="Construção">Construção</Option>
               <Option value="Manutenções">Manutenções</Option>
               <Option value="Demolição">Demolição</Option>
@@ -109,7 +109,11 @@ export const SecaoForm: React.FC = () => {
               rows={11}
             />
           </FormTextContainer>
-          <FormButton type="submit" data-aos="fade-right" data-aos-duration="500">
+          <FormButton
+            type="submit"
+            data-aos="fade-right"
+            data-aos-duration="500"
+          >
             Solicite seu Orçamento
           </FormButton>
         </FormContainer>

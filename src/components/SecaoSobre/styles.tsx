@@ -15,6 +15,7 @@ export const SobreContainer = styled.div`
     padding: 0 2rem;
     flex-direction: column;
     align-items: flex-start;
+    height: auto;
   }
 
   @media (max-width: 768px) {
@@ -114,4 +115,89 @@ export const SobreImg = styled.img`
     max-height: 350px;
     width: 100%;
   }
+`;
+export const PrincipalContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const CardsContainer = styled.div`
+  height: auto;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 10rem;
+  margin-bottom: 5rem;
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 2rem;
+    padding: 2rem 4rem;
+    flex-direction: column;
+  }
+
+`;
+
+export const Card = styled.div`
+
+  background-color: rgba(0, 123, 231, 0.04);
+  border-radius: 8px;
+  height: 300px;
+  width: 33%;
+  padding: 2rem 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .2rem;
+  @media screen and (max-width: 600px) {
+    border-radius: 0;
+    border-right: none;
+    border-bottom: 1px solid ${(props) => props.theme.colors.secondary};
+    width: 100%;
+    padding: 3rem 4rem;
+    flex-direction: column;
+    background-color:transparent;
+  }
+  @media screen and (min-width: 601px) and (max-width: 1024px){
+    border-radius: 0;
+    border-right: none;
+    border-bottom: 1px solid ${(props) => props.theme.colors.secondary};
+    width: 70%;
+    padding: 3rem 7rem;
+    flex-direction: column;
+    background-color:transparent;
+  }
+  transition: filter .3s ease;
+  :hover{
+filter: brightness(1.1);
+  }
+`;
+export const Icon = styled.img`
+width: 3.3rem;
+height: 3.3rem;
+`;
+
+export const Infos = styled.div`
+color: wheat;
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+align-items: center;
+justify-content: center;
+`;
+
+export const Title = styled.h6`
+  font-size: 2rem;
+  color: #007DE7;
+  font-weight: 700;
+`;
+
+export const Sub = styled.p`
+  font-size: 1.6rem;
+  color: ${(props) => props.theme.colors.secondary};
+  font-weight: 400;
 `;

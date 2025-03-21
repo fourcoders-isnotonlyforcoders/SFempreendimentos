@@ -15,7 +15,8 @@ import {
   FooterContentItemTitle,
   FooterIconContato,
   FooterIconLink,
-  SecondaryLogo
+  SecondaryLogo,
+  FooterContentItemContent2
 } from "./styles";
 
 export const Footer = () => {
@@ -32,14 +33,14 @@ export const Footer = () => {
         </FooterContentItem>
         <FooterContentItem>
           <FooterContentItemTitle>Redes Sociais</FooterContentItemTitle>
-          <FooterContentItemContent rowMobile>
+          <FooterContentItemContent2>
             <FooterIconLink href={IGLINK} target="_blank">
               <FooterBottomIconRedeSocial src={"./icons/instagram.svg"} />
             </FooterIconLink>
             <FooterIconLink href={FBLINK} target="_blank">
               <FooterBottomIconRedeSocial src={"./icons/facebook.svg"} />
             </FooterIconLink>
-          </FooterContentItemContent>
+          </FooterContentItemContent2>
         </FooterContentItem>
         <FooterContentItem>
           <FooterContentItemTitle>Contato</FooterContentItemTitle>

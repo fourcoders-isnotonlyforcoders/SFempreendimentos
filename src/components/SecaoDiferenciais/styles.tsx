@@ -41,7 +41,7 @@ export const SecaoDiferenciaisCard = styled.div`
   align-items: flex-start;
   gap: 2rem;
   width: 100%;
-  width: 25%;
+  width: 33%;
   min-height: 322px;
   padding: 2rem 1.5rem;
   border-radius: 12px;
@@ -49,7 +49,6 @@ export const SecaoDiferenciaisCard = styled.div`
   border: 2.5px solid ${({ theme }) => theme.colors.black};
   transition: scale 0.4s, opacity 0.5s, transform 0.5s !important;
   cursor: pointer;
-
   &:hover {
     scale: 1.05;
   }
@@ -66,7 +65,7 @@ export const SecaoDiferenciaisCardIcon = styled.img`
 `;
 
 export const SecaoDiferenciaisCardTitle = styled.h3`
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.white};
 
@@ -88,7 +87,7 @@ export const SecaoDiferenciaisCardTitle = styled.h3`
 `;
 
 export const SecaoDiferenciaisCardDescription = styled.p`
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 400;
   color: ${({ theme }) => theme.colors.secondary};
   @media (max-width: 1180px) {
