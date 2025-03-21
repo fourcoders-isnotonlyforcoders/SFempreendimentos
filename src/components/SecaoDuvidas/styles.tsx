@@ -30,7 +30,6 @@ export const AccordionContainer = styled.div`
 
 export const AccordionTitleContainer = styled.div`
   width: 50%;
-  height: 38rem;
   display: flex;
   align-items: center;
   justify-content: center;

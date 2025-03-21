@@ -32,7 +32,7 @@ export const Footer = () => {
         </FooterContentItem>
         <FooterContentItem>
           <FooterContentItemTitle>Redes Sociais</FooterContentItemTitle>
-          <FooterContentItemContent>
+          <FooterContentItemContent rowMobile>
             <FooterIconLink href={IGLINK} target="_blank">
               <FooterBottomIconRedeSocial src={"./icons/instagram.svg"} />
             </FooterIconLink>

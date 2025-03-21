@@ -30,13 +30,13 @@ export const FormContainer = styled.form`
   padding: 1rem 4rem 4rem 8rem;
   width: 100%; 
   max-width: 50%;
-  height: 100%;
   background-color: ${(props) => props.theme.colors.white};
   border-radius: 22px;
   margin-left: -4rem;
 
   @media (max-width: 1024px) {
     max-width: 90%; 
+    margin-left: 0;
   }
 
   @media (max-width: 480px) {
@@ -89,7 +89,8 @@ export const NameInput = styled.input`
 
   &:focus {
     outline: none;
-    border-bottom: 2px solid ${(props) => props.theme.colors.black};
+    border-bottom: 2px solid ${(props) => props.theme.colors.secondaryBlue};
+    color: ${(props) => props.theme.colors.secondaryBlue};
   }
 
   &:focus ~ label,
@@ -97,6 +98,10 @@ export const NameInput = styled.input`
   &:valid ~ label {
     top: -22px;
     font-size: 1.6rem;
+    color: ${(props) => props.theme.colors.secondaryBlue};
+  }
+
+  &:not(&:focus) ~ label {
     color: ${(props) => props.theme.colors.black};
   }
 
@@ -159,42 +164,40 @@ export const FormTextContainer = styled.div`
     outline: none;
     background-color: transparent;
     color: ${(props) => props.theme.colors.black};
+    transition: color 0.3s, border 0.3s, opacity 0.5s, transform 0.5s !important;
   }
 
   ::placeholder {
     color: ${(props) => props.theme.colors.black};
+    transition: color 0.3s !important;
   }
+
   textarea:focus {
-    border: 2px solid ${(props) => props.theme.colors.black};
+    border: 2px solid ${(props) => props.theme.colors.secondaryBlue};
+    color: ${(props) => props.theme.colors.secondaryBlue};
+  }
+
+  textarea:focus::placeholder {
+    color: ${(props) => props.theme.colors.secondaryBlue};
   }
 `;
 
 export const FormButton = styled.button`
-  border: 2px solid ${(props) => props.theme.colors.navyBlue};
   padding: 2.2rem 0;
   text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
-  color: ${(props) => props.theme.colors.black};
+  color: ${(props) => props.theme.colors.white};
   width: 100%;
   border-radius: 22px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  background: radial-gradient(
-    circle,
-    rgba(3, 75, 139, 0.11),
-    rgba(1, 44, 109, 0.22)
-  );
+  background-color: ${(props) => props.theme.colors.black};
   margin-top: 2rem;
+  transition: background-color 0.3s, transform 0.3s, opacity 0.5s, transform 0.5s !important;
   &:hover {
-    border: 2px solid ${(props) => props.theme.colors.black};
-    color: ${(props) => props.theme.colors.black};
+    color: ${(props) => props.theme.colors.white};
     transform: scale(1.03) !important;
-    background: radial-gradient(
-      circle,
-      rgba(0, 123, 231, 0.22),
-      rgba(80, 150, 255, 0.44)
-    );
+    background-color: ${(props) => props.theme.colors.secondaryBlue};
   }
 `;
 
@@ -218,11 +221,12 @@ export const PrimarySelect = styled.select`
   cursor: pointer;
 
   &:focus {
-    border-color: ${(props) => props.theme.colors.black};
+    border-color: ${(props) => props.theme.colors.secondaryBlue};
+    color: ${(props) => props.theme.colors.secondaryBlue} !important;
     outline: none;
   }
   &:valid {
-    color: ${(props) => props.theme.colors.black}; 
+    color: ${(props) => props.theme.colors.secondaryBlue}; 
   }
 
 `;
@@ -249,23 +253,17 @@ export const SecaoContainer = styled.div`
   padding: 2rem 0 0;
 `;
 
-export const SecaoLadoForm = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  border-radius: 22px;
-`;
-
 export const FormImage = styled.img`
-  height: 100%;
-  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
   cursor: inherit;
   border-radius: 22px;
   transition: transform 0.3s ease;
   transition: box-shadow 0.3s ease, filter 0.3s ease, opacity 0.5s,
     transform 0.5s !important;
   box-shadow: 0 7px 10px 7px rgba(0, 18, 85, 0.11);
+  object-fit: fill;
+  z-index: 10;
 
   &:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
@@ -273,11 +271,8 @@ export const FormImage = styled.img`
   }
 
   @media (max-width: 1024px) {
-    max-height: 400px;
+    display: none;
   }
 
-  @media (max-width: 480px) {
-    max-height: 350px;
-    width: 100%;
-  }`
+`
 

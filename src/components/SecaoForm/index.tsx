@@ -11,7 +11,6 @@ import {
   SelectsContainer,
   Option,
   SecaoContainer,
-  SecaoLadoForm,
   FormImage
 } from "./styles";
 import InputField from "./InputField";
@@ -50,14 +49,17 @@ export const SecaoForm: React.FC = () => {
         id="contato"
       />
       <SecaoContainer>
-        <SecaoLadoForm>
         <FormImage
-          src="./images/familyImage.avif"
-          data-aos="fade-up-left"
+          src="./images/FormImage.avif"
+          data-aos="fade-right"
           data-aos-duration="500"
-        ></FormImage>
-        </SecaoLadoForm>
-        <FormContainer onSubmit={handleSubmit}>
+        >
+        </FormImage>
+        <FormContainer 
+          onSubmit={handleSubmit}  
+          data-aos="fade-left"
+          data-aos-duration="500"
+          >
           <FormNameContainer>
             <InputField
               id="nome"

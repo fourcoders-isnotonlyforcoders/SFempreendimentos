@@ -42,11 +42,15 @@ export const FooterContentItemTitle = styled.p`
   color: ${({ theme }) => theme.colors.white};
 `;
 
-export const FooterContentItemContent = styled.div`
+export const FooterContentItemContent = styled.div<{ rowMobile?: boolean }>`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
+
+  @media only screen and (max-width: 768px) {
+    ${({ rowMobile }) => rowMobile && "flex-direction: row;"}
+  }
 `;
 
 export const FooterContentItemText = styled.p`
