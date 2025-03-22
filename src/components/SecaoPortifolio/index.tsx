@@ -15,7 +15,7 @@ export const SecaoPortifolio = () => {
       />
       <Carrousel />
       <Button
-        content="Inicie seu Projeto agora"
+        content="Inicie seu projeto agora"
         onClick={() => window.open(WPLINK)}
         size="large"
       />
