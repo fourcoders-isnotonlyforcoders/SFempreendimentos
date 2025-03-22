@@ -8,6 +8,10 @@ export const FooterContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 10rem 2rem 2rem;
+  }
 `;
 
 export const FooterContent = styled.div`
