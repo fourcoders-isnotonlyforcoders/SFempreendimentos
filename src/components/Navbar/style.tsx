@@ -15,20 +15,20 @@ export const NavbarContainer = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    padding: 2rem;
   }
   @media (max-width: 490px) {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin-bottom: -2rem;
   }
 `;
 
 export const NavbarMenu = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 3rem;
+  justify-content: space-around;
+  width: 100%;
 `;
 
 export const NavbarMenuItem = styled.a<{ transition: string }>`
