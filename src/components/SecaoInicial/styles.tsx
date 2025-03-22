@@ -63,7 +63,7 @@ export const SecaoInicialContent = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
-  width: 50%;
+  width: 55%;
   height: 100%;
   padding: 0 1rem;
 
@@ -80,7 +80,7 @@ export const SecaoInicialContent = styled.div`
 `;
 
 export const SecaoInicialTitle = styled.h1`
-  font-size: 4.4rem;
+  font-size: 4.2rem;
   font-weight: 600;
   line-height: 1;
   margin: 0;
@@ -95,7 +95,7 @@ export const SecaoInicialTitle = styled.h1`
 `;
 
 export const SecaoInicialTitleStrong = styled.strong`
-  font-size: 4.4rem;
+  font-size: 4.2rem;
   font-weight: bold;
   color: ${({ theme }) => theme.colors.primaryBlue};
 
@@ -108,7 +108,7 @@ export const SecaoInicialTitleStrong = styled.strong`
 `;
 
 export const SecaoInicialDescription = styled.p`
-  font-size: 2rem;
+  font-size: 1.9rem;
   margin: 0;
   font-weight: 400;
   color: ${({ theme }) => theme.colors.secondary};
