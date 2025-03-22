@@ -54,7 +54,7 @@ export const SecaoSobre: React.FC = () => {
       </SobreContainer>
       <CardsContainer>
         <Card>
-          <Icon src="/public/icons/target.svg" />
+          <Icon src="/icons/target.svg" />
           <Infos>
             <Title>Missão</Title>
             <Sub>
@@ -66,7 +66,7 @@ export const SecaoSobre: React.FC = () => {
           </Infos>
         </Card>
         <Card>
-          <Icon src="/public/icons/eye.svg" />
+          <Icon src="icons/eye.svg" />
           <Infos>
             <Title>Visão</Title>
             <Sub>
@@ -78,7 +78,7 @@ export const SecaoSobre: React.FC = () => {
           </Infos>
         </Card>
         <Card>
-          <Icon src="/public/icons/diamonds-four.svg" />
+          <Icon src="/icons/diamonds-four.svg" />
           <Infos>
             <Title>Valores</Title>
             <Sub>
