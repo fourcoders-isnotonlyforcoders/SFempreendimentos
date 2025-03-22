@@ -42,7 +42,7 @@ export const FormContainer = styled.form`
 
   @media (max-width: 480px) {
     width: 100%;
-    padding: 1rem 2rem 4rem 2rem;
+    padding: 2rem 2.2rem 4rem 2.2rem;
   }
 `;
 

@@ -16,8 +16,8 @@ export const SecaoContatoContainer = styled.div`
   padding: 8rem 12rem;
   gap: 2rem;
 
-  @media only screen and (max-width: 1180px) {
-    padding: 5rem 2rem 8rem;
+  @media only screen and (max-width: 906px) {
+    padding: 4rem 2rem;
   }
 `;
 
@@ -63,5 +63,8 @@ export const LastBtn = styled.button`
     transform: scale(1.02);
     box-shadow: 0 0 11px 2px #5396F3;
     filter: brightness(1.1);
+  }
+  @media screen and (max-width: 908px) {
+    padding: 1.8rem 2.4rem ;
   }
 `;
