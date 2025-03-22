@@ -1,5 +1,5 @@
 import React from "react";
-import { NameInput, NameTitle, Bar, FormNameContainer } from "./styles";
+import { NameInput, FormNameContainer } from "./styles";
 
 type InputFieldProps = {
   id: string;
@@ -7,14 +7,15 @@ type InputFieldProps = {
   type: "text" | "email" | "tel";
   required?: boolean;
   name: string;
+  placeholder: string;
 };
 
 const InputField: React.FC<InputFieldProps> = ({
   id,
-  label,
   type,
   name,
-  required
+  required, 
+  placeholder
 }) => {
   return (
     <FormNameContainer>
@@ -23,14 +24,10 @@ const InputField: React.FC<InputFieldProps> = ({
         type={type}
         id={id}
         name={name}
-        placeholder=" "
+        placeholder={placeholder}
         data-aos="fade-left"
         data-aos-duration="500"
       />
-      <NameTitle htmlFor={id} data-aos="fade-right" data-aos-duration="500">
-        {label}
-      </NameTitle>
-      <Bar />
     </FormNameContainer>
   );
 };

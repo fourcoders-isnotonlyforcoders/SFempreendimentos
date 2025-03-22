@@ -65,6 +65,7 @@ export const SecaoForm: React.FC = () => {
               label="Nome Completo"
               type="text"
               name="nome"
+              placeholder="Nome Completo "
               required
             />
           </FormNameContainer>
@@ -74,6 +75,7 @@ export const SecaoForm: React.FC = () => {
               label="Email"
               type="email"
               name="email"
+              placeholder="Email "
               required
             />
             <InputField
@@ -81,6 +83,7 @@ export const SecaoForm: React.FC = () => {
               label="Telefone"
               type="tel"
               name="telefone"
+              placeholder="Telefone "
               required
             />
           </FormInfosContainer>

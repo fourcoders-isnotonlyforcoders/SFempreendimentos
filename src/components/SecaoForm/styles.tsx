@@ -8,6 +8,7 @@ export const SecaoFormContainer = styled.section`
   display: flex;
   flex-direction: column;
   margin: 2rem auto;
+  font-family: 'Montserrat';
 
   @media (max-width: 1024px) {
     padding: 5rem 1rem;
@@ -48,7 +49,6 @@ export const FormContainer = styled.form`
 export const FormNameContainer = styled.div`
   position: relative;
   width: 100%; 
-  margin-top: 2rem;
   text-align: center; 
 
   @media (max-width: 906px) {
@@ -70,134 +70,76 @@ export const FormInfosContainer = styled.div`
   }
 `;
 
-
-
 export const NameInput = styled.input`
-  font-size: 1.8rem;
-  padding: 10px 10px 10px 5px;
-  display: block;
-  width: 100%;
+  padding: 1.8rem 4rem 1.8rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
-  border-bottom: 2px solid ${(props) => props.theme.colors.black};
-  border-radius: 4px;
-  background: transparent;
-  color: ${(props) => props.theme.colors.black};
+  width: 100%;
+  border-radius: 8px;
+  background: #000312;
+  color: ${(props) => props.theme.colors.white} !important;
+  font-family: 'Montserrat';
 
   &::placeholder {
-    color: transparent;
-  }
-
-  &:focus {
-    outline: none;
-    border-bottom: 2px solid ${(props) => props.theme.colors.primaryBlue};
-    color: ${(props) => props.theme.colors.primaryBlue};
-  }
-
-  &:focus ~ label,
-  &:not(&:placeholder-shown) ~ label,
-  &:valid ~ label {
-    top: -22px;
     font-size: 1.6rem;
-    color: ${(props) => props.theme.colors.primaryBlue};
+    color: ${(props) => props.theme.colors.white};
+    transition: opacity 0.3s ease; 
   }
 
-  &:not(&:focus) ~ label {
-    color: ${(props) => props.theme.colors.black};
-  }
-
-  &:focus ~ .bar:before,
-  &:focus ~ .bar:after {
-    width: 50%;
-  }
-  @media (max-width: 1024px) {
-    max-width: 100%;
+  &:focus::placeholder {
+    opacity: 0; 
   }
 `;
 
-export const NameTitle = styled.label`
-  color: ${(props) => props.theme.colors.black};
-  font-size: 1.6rem;
-  font-weight: normal;
-  position: absolute;
-  left: 5px;
-  top: 10px;
-  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease, opacity 0.5s,
-    transform 0.5s !important;
-  pointer-events: none;
-`;
 
-export const Bar = styled.span`
-  position: relative;
-  display: block;
-  width: 100%;
-
-  &::before,
-  &::after {
-    content: "";
-    height: 2px;
-    width: 0;
-    position: absolute;
-    background: ${(props) => props.theme.colors.black};
-    transition: 0.2s ease all;
-  }
-
-  &::before {
-    left: 50%;
-  }
-
-  &::after {
-    right: 50%;
-  }
-`;
 
 export const FormTextContainer = styled.div`
   margin-top: 2rem;
   width: auto;
   min-width: 100%;
+  font-family: 'Montserrat';
   textarea {
     width: 100%;
     padding: 2rem;
-    font-size: 1.8rem;
-    border: 2px solid ${(props) => props.theme.colors.black};
-    border-radius: 12px;
+    font-family: 'Montserrat';
+    font-size: 1.6rem;
+    border-radius: 20px;
     resize: none;
     outline: none;
-    background-color: transparent;
-    color: ${(props) => props.theme.colors.black};
-    transition: color 0.3s, border 0.3s, opacity 0.5s, transform 0.5s !important;
+    background: #000312;
+    color: ${(props) => props.theme.colors.white} !important;
+    transition: all 0.3s ease !important;
   }
-
   ::placeholder {
-    color: ${(props) => props.theme.colors.black};
+    color: ${(props) => props.theme.colors.white};
     transition: color 0.3s !important;
   }
-
   textarea:focus {
-    border: 2px solid ${(props) => props.theme.colors.secondaryBlue};
-    color: ${(props) => props.theme.colors.primaryBlue};
+    color: ${(props) => props.theme.colors.white};
   }
-
   textarea:focus::placeholder {
-    color: ${(props) => props.theme.colors.primaryBlue};
+    color: ${(props) => props.theme.colors.white};
+    opacity: 0;
   }
 `;
 
 export const FormButton = styled.button`
   padding: 2.2rem 0;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: ${(props) => props.theme.colors.white};
   width: 100%;
-  border-radius: 22px;
+  border-radius: 12px;
   cursor: pointer;
-  background-color: ${(props) => props.theme.colors.black};
+  background-color: ${(props) => props.theme.colors.primaryBlue};
   margin-top: 2rem;
   transition: background-color 0.3s, transform 0.3s, opacity 0.5s, transform 0.5s !important;
   &:hover {
-    color: ${(props) => props.theme.colors.white};
+    color: ${(props) => props.theme.colors.black};
     transform: scale(1.03) !important;
-    background-color: ${(props) => props.theme.colors.secondaryBlue};
   }
 `;
 
@@ -208,27 +150,21 @@ export const SelectsContainer = styled.div`
 `;
 
 export const PrimarySelect = styled.select`
-  background: none;
-  color: ${(props) => props.theme.colors.black} !important;
-  border: none;
-  border-bottom: 2px solid ${(props) => props.theme.colors.black};
-  padding: 2rem 1rem;
-  font-size: 1.6rem;
+  padding: 1.8rem 4rem 1.8rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  border-radius: 4px;
-  outline: none; 
-  transition: border-color 0.3s ease;
-  cursor: pointer;
-
-  &:focus {
-    border-color: ${(props) => props.theme.colors.secondaryBlue};
-    color: ${(props) => props.theme.colors.secondaryBlue} !important;
-    outline: none;
+  border-radius: 8px;
+  background: #000312;
+  font-family: 'Montserrat';
+  font-size: 1.6rem;
+  border: 2px solid ${(props) => props.theme.colors.black};
+  color: ${(props) => props.theme.colors.white} !important;
+  &::placeholder{
+    font-size: 1.6rem;
+    color: ${(props) => props.theme.colors.white};
   }
-  &:valid {
-    color: ${(props) => props.theme.colors.secondaryBlue}; 
-  }
-
 `;
 
 export const Option = styled.option`
