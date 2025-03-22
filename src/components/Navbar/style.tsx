@@ -27,8 +27,14 @@ export const NavbarContainer = styled.div`
 export const NavbarMenu = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: center;
+  gap: 3rem;
+  
+  @media (max-width: 768px) {
+    width: 100%;
+    gap: 0;
+    justify-content: space-around;
+  }
 `;
 
 export const NavbarMenuItem = styled.a<{ transition: string }>`
