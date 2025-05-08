@@ -7,7 +7,7 @@ import {
 } from "./styles";
 import { PORTIFOLIO } from "../../constants/portifolio";
 
-const animation = { duration: 40000, easing: (t: number) => t };
+const animation = { duration: 34000, easing: (t: number) => t };
 
 export const Carrousel: React.FC = () => {
   const numberOfCards = PORTIFOLIO.length;
@@ -15,10 +15,10 @@ export const Carrousel: React.FC = () => {
     loop: true,
     renderMode: "performance",
     drag: true,
-    slides: { perView: 3, spacing: 20 },
+    slides: { perView: 3, spacing: 22 },
     breakpoints: {
       "(max-width: 768px)": {
-        slides: { perView: 1, spacing: 20 },
+        slides: { perView: 1, spacing: 22 },
       },
     },
     created(s) {
