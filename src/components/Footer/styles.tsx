@@ -95,7 +95,7 @@ export const FooterBottomCenterText = styled.p`
   color: ${({ theme }) => theme.colors.secondary};
 
   @media only screen and (max-width: 768px) {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 `;
 
@@ -145,7 +145,7 @@ export const FooterBottomLink = styled(Link)`
   }
 
   @media only screen and (max-width: 768px) {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 `;
 

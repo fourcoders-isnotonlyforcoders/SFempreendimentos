@@ -74,7 +74,7 @@ export const Footer = () => {
           <FooterBottomCenterText>
             © SF {new Date().getFullYear()}. Todos os direitos reservados.
           </FooterBottomCenterText>
-          <FooterBottomLink to="https://fourcoders.com.br">
+          <FooterBottomLink to="https://fourcoders.com">
             Desenvolvido por FourCoders
           </FooterBottomLink>
         </FooterBottomCenter>
