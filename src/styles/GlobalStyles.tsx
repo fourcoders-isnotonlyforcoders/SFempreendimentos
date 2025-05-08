@@ -10,7 +10,7 @@ export const GlobalStyles = createGlobalStyle`
 html,
 body {
     background: ${(props) => props.theme.colors.black};
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 10px;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
