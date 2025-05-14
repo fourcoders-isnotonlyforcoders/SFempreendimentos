@@ -11,7 +11,6 @@ export const CarrouselContainer = styled.div`
   @media (max-width: 1180px) {
     height: 444px;
     padding: 1rem;
-    border: 1px solid green;
   }
 `;
 
