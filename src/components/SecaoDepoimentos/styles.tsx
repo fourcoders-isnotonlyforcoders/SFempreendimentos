@@ -25,7 +25,7 @@ export const SecaoDepoimentosContainer = styled.div`
   gap: 6rem;
 
   @media only screen and (max-width: 768px) {
-    padding: 8rem 2rem 10rem;
+    padding: 8rem 0 10rem 0;
   }
 `;
 

@@ -18,7 +18,7 @@ export const Carrousel: React.FC = () => {
     slides: { perView: 3, spacing: 22 },
     breakpoints: {
       "(max-width: 768px)": {
-        slides: { perView: 1, spacing: 22 },
+        slides: { perView: .81, spacing: 22 },
       },
     },
     created(s) {

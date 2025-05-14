@@ -5,9 +5,9 @@ export const SecaoDiferenciaisBackground = styled.div`
     to bottom,
     #f5f5f5,
     #f5f5f5,
-    rgba(0, 0, 0, 0) 98%
+    rgba(0, 0, 0, 0) 100%
   );
-  border-top-right-radius: 222px;
+  border-top-right-radius: 202px;
 `;
 
 export const SecaoDiferenciaisContainer = styled.div`

@@ -10,7 +10,7 @@ export const FooterContainer = styled.div`
   margin: 0 auto;
 
   @media (max-width: 768px) {
-    padding: 10rem 2rem 2rem;
+    padding: 10rem 1rem 2rem 1rem; 
   }
 `;
 
@@ -80,6 +80,7 @@ export const FooterBottom = styled.div`
 
   @media only screen and (max-width: 768px) {
     padding: 2rem 0 0;
+    gap: 4px;
   }
 `;
 
@@ -95,7 +96,7 @@ export const FooterBottomCenterText = styled.p`
   color: ${({ theme }) => theme.colors.secondary};
 
   @media only screen and (max-width: 768px) {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 `;
 
@@ -145,7 +146,7 @@ export const FooterBottomLink = styled(Link)`
   }
 
   @media only screen and (max-width: 768px) {
-    font-size: 0.8rem;
+    font-size:.9rem;
   }
 `;
 
